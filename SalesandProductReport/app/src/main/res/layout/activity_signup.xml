@@ -50,10 +50,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Login"
+            android:text="Sign Up"
             android:textSize="20sp"
             android:textColor="@color/colorWhite"
-            android:layout_marginLeft="120dp"
+            android:layout_marginLeft="110dp"
             android:layout_marginTop="105dp"/>
     </LinearLayout>
 
@@ -72,7 +72,37 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="160dp"
+            android:layout_marginTop="150dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <ImageView
+                android:id="@+id/imageView_Account"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                app:srcCompat="@drawable/ic_account_circle_black_18dp"
+                android:layout_marginTop="39dp"
+                android:layout_marginLeft="40dp"/>
+            <EditText
+                android:id="@+id/editText_LoginName"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight=".8"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="10dp"
+                android:hint="Name"
+                android:background="@drawable/rounded_edittext"
+                android:paddingLeft="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
             android:orientation="horizontal"
             android:weightSum="1">
             <ImageView
@@ -102,7 +132,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="220dp"
+            android:layout_marginTop="250dp"
             android:orientation="horizontal"
             android:weightSum="1">
             <ImageView
@@ -125,45 +155,46 @@
         </LinearLayout>
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView_LoginForgotPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="false"
-        android:layout_marginBottom="155dp"
-        android:layout_marginLeft="150dp"
-        android:text="Forgot password?"
-        android:textColor="@color/colorWhite"
-        android:textColorLink="#0097A9"
-        android:textSize="12sp"
-        android:onClick="click"
-        android:linksClickable="true"
-        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <ImageView
+                android:id="@+id/imageView_Email"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                app:srcCompat="@drawable/ic_mail_black_18dp"
+                android:layout_marginTop="38dp"
+                android:layout_marginLeft="40dp" />
+            <EditText
+                android:id="@+id/editText_LoginEmail"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight=".8"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="10dp"
+                android:hint="Email"
+                android:background="@drawable/rounded_edittext"
+                android:paddingLeft="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
 
     <Button
-        android:id="@+id/button_Login"
+        android:id="@+id/button_SignUp"
         android:layout_width="140dp"
         android:layout_height="40dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="70dp"
-        android:text="Login"
+        android:layout_marginBottom="20dp"
+        android:text="Register"
         android:textSize="16sp"
         android:textColor="#0097A9"
         android:background="@drawable/rounded_button" />
-
-    <TextView
-        android:id="@+id/textView_LoginSignup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Don't have an account yet?"
-        android:linksClickable="true"
-        android:textColor="@color/colorWhite"
-        android:onClick="click"
-        android:textColorLink="#0097A9"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="35dp" />
 
 </RelativeLayout>

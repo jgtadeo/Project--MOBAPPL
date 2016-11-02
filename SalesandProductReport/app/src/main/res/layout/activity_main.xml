@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ph.edu.apc.renzo.salesandproductreport.Activities.LoginActivity"
+    android:background="@color/colorAccent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ELOUS STORE"
+            android:textSize="30sp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:background="@color/colorLine"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp">
+    </View>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome!"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="105dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:background="@color/colorLine"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="20dp">
+    </View>
+
+    <Button
+        android:id="@+id/button_MainSales"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="250dp"
+        android:text="Sales"
+        android:textSize="16sp"
+        android:textColor="#0B4555"
+        android:background="@drawable/color_button"/>
+
+    <Button
+        android:id="@+id/button_MainProducts"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="200dp"
+        android:text="Products"
+        android:textSize="16sp"
+        android:textColor="#0B4555"
+        android:background="@drawable/color_button"/>
+
+    <Button
+        android:id="@+id/button_MainGraph"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="150dp"
+        android:text="Graph"
+        android:textSize="16sp"
+        android:textColor="#0B4555"
+        android:background="@drawable/color_button"/>
+
+    <Button
+        android:id="@+id/button_MainExpenses"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:text="Expenses"
+        android:textSize="16sp"
+        android:textColor="#0B4555"
+        android:background="@drawable/color_button"
+        android:drawableRight="@drawable/ic_account_circle_black_18dp" />
+
+    <View
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:background="@color/colorLine"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp">
+    </View>
+
+    <TextView
+        android:id="@+id/textView_MainLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:linksClickable="true"
+        android:textColor="@color/colorWhite"
+        android:onClick="click"
+        android:textColorLink="#0097A9"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+
+
+</RelativeLayout>
