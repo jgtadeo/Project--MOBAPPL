@@ -13,9 +13,9 @@ import ph.edu.apc.renzo.salesandproductreport.R;
  * Created by Renzo on 01/11/2016.
  */
 
-public class Sales extends Fragment {
+public class ListOfSalesFragment extends Fragment {
 
-    public Sales() {
+    public ListOfSalesFragment() {
 
     }
 
@@ -28,6 +28,6 @@ public class Sales extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_sales, container, false);
+        return inflater.inflate(R.layout.fragment_listofsales, container, false);
     }
 }

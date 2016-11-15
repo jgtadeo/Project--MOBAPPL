@@ -15,15 +15,15 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-import ph.edu.apc.renzo.salesandproductreport.Fragments.ListOfSalesFragment;
-import ph.edu.apc.renzo.salesandproductreport.Fragments.SalesFragment;
+import ph.edu.apc.renzo.salesandproductreport.Fragments.ListOfProductsFragment;
+import ph.edu.apc.renzo.salesandproductreport.Fragments.ProductsFragment;
 import ph.edu.apc.renzo.salesandproductreport.R;
 
 /**
- * Created by Renzo on 29/10/2016.
+ * Created by Renzo on 11/11/2016.
  */
 
-public class SalesActivity extends AppCompatActivity {
+public class ProductsActivity extends AppCompatActivity {
 
     private TextView back;
     private ViewPager viewPager;
@@ -32,7 +32,7 @@ public class SalesActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sales);
+        setContentView(R.layout.activity_products);
 
         back();
 
@@ -42,7 +42,6 @@ public class SalesActivity extends AppCompatActivity {
         tabLayout = (TabLayout)findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
         setupTabIcons();
-
     }
 
     private void back() {
@@ -50,30 +49,29 @@ public class SalesActivity extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent back = new Intent(SalesActivity.this, MainActivity.class);
+                Intent back = new Intent(ProductsActivity.this, MainActivity.class);
                 startActivity(back);
                 finish();
             }
         });
     }
 
-    private void setupTabIcons() {
-        tabLayout.getTabAt(0).setText("INPUT SALES");
-        tabLayout.getTabAt(1).setText("LIST OF SALES");
+    protected void setupTabIcons() {
+        tabLayout.getTabAt(0).setText("INPUT PRODUCTS");
+        tabLayout.getTabAt(1).setText("LIST OF PRODUCTS");
     }
 
     protected void setupViewPager(ViewPager viewPager) {
-
         ViewPageAdapter adapter = new ViewPageAdapter(getSupportFragmentManager());
-        adapter.addFragment(new SalesFragment(), "");
-        adapter.addFragment(new ListOfSalesFragment(), "");
+        adapter.addFragment(new ProductsFragment(), "");
+        adapter.addFragment(new ListOfProductsFragment(), "");
         viewPager.setAdapter(adapter);
     }
 
     class ViewPageAdapter extends FragmentPagerAdapter {
 
-        private final List<Fragment> sFragmentList = new ArrayList<>();
-        private final List<String> sFragmentTitleList = new ArrayList<>();
+        private final List<Fragment> pFragmentList = new ArrayList<>();
+        private final List<String> pFragmentTitleList = new ArrayList<>();
 
         public ViewPageAdapter(FragmentManager manager) {
             super(manager);
@@ -81,33 +79,33 @@ public class SalesActivity extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
-            return sFragmentList.get(position);
+            return pFragmentList.get(position);
         }
 
         @Override
         public int getCount() {
-            return sFragmentList.size();
+            return pFragmentList.size();
         }
 
-        public void addFragment(SalesFragment fragment, String title) {
-            sFragmentList.add(fragment);
-            sFragmentTitleList.add(title);
+        public void addFragment(ProductsFragment fragment, String title) {
+            pFragmentList.add(fragment);
+            pFragmentTitleList.add(title);
         }
 
-        public void addFragment(ListOfSalesFragment fragment, String title) {
-            sFragmentList.add(fragment);
-            sFragmentTitleList.add(title);
+        public void addFragment(ListOfProductsFragment fragment, String title) {
+            pFragmentList.add(fragment);
+            pFragmentTitleList.add(title);
         }
 
         @Override
         public CharSequence getPageTitle(int position) {
-            return sFragmentTitleList.get(position);
+            return pFragmentTitleList.get(position);
         }
     }
 
     @Override
     public void onBackPressed() {
-        Intent back = new Intent(SalesActivity.this, MainActivity.class);
+        Intent back = new Intent(ProductsActivity.this, MainActivity.class);
         startActivity(back);
         finish();
     }

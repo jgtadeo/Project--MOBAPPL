@@ -1,8 +1,11 @@
 package ph.edu.apc.renzo.salesandproductreport.Activities;
 
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Paint;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -16,7 +19,7 @@ import ph.edu.apc.renzo.salesandproductreport.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private Button sales;
+    private Button sales, products, graph, expenses;
     private TextView logout;
 
     @Override
@@ -26,8 +29,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         sales = (Button)findViewById(R.id.button_MainSales);
         sales.setOnClickListener(this);
+
+        products = (Button)findViewById(R.id.button_MainProducts);
+        products.setOnClickListener(this);
+
+        expenses = (Button)findViewById(R.id.button_MainExpenses);
+        expenses.setOnClickListener(this);
+
         logout = (TextView)findViewById(R.id.textView_MainLogout);
+        logout.setPaintFlags(Paint.UNDERLINE_TEXT_FLAG);
         logout.setOnClickListener(this);
+
     }
 
     @Override
@@ -38,12 +50,63 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(sales);
                 finish();
                 break;
+
+            case R.id.button_MainProducts:
+                Intent products = new Intent(MainActivity.this, ProductsActivity.class);
+                startActivity(products);
+                finish();
+                break;
+
+            case R.id.button_MainExpenses:
+                Intent expenses = new Intent(MainActivity.this, ExpensesActivity.class);
+                startActivity(expenses);
+                finish();
+                break;
+
             case R.id.textView_MainLogout:
+                AlertDialog DYWlogout = new AlertDialog.Builder(this).create();
+                DYWlogout.setTitle("Logout");
+                DYWlogout.setMessage("Do you really want to logout?");
+                DYWlogout.setButton(AlertDialog.BUTTON_POSITIVE, "Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                        Intent logout = new Intent(MainActivity.this, LoginActivity.class);
+                        startActivity(logout);
+                        finish();
+                    }
+                });
+                DYWlogout.setButton(AlertDialog.BUTTON_NEGATIVE, "No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+                DYWlogout.show();
+                break;
+        }
+    }
+
+    @Override
+    public void onBackPressed() {
+        AlertDialog DYWlogout = new AlertDialog.Builder(this).create();
+        DYWlogout.setTitle("Logout");
+        DYWlogout.setMessage("Do you really want to logout?");
+        DYWlogout.setButton(AlertDialog.BUTTON_POSITIVE, "Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
                 Intent logout = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(logout);
                 finish();
-                break;
-        }
-
+            }
+        });
+        DYWlogout.setButton(AlertDialog.BUTTON_NEGATIVE, "No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        });
+        DYWlogout.show();
     }
 }

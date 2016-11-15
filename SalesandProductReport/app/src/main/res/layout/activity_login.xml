@@ -89,6 +89,8 @@
                 android:layout_weight=".8"
                 android:layout_marginTop="35dp"
                 android:layout_marginLeft="10dp"
+                android:inputType="text"
+                android:maxLines="1"
                 android:hint="Username"
                 android:background="@drawable/rounded_edittext"
                 android:paddingLeft="5dp"/>
@@ -119,6 +121,8 @@
                 android:layout_weight=".8"
                 android:layout_marginTop="35dp"
                 android:layout_marginLeft="10dp"
+                android:inputType="text"
+                android:maxLines="1"
                 android:hint="Password"
                 android:background="@drawable/rounded_edittext"
                 android:paddingLeft="5dp"/>
@@ -138,8 +142,7 @@
         android:textColorLink="#0097A9"
         android:textSize="12sp"
         android:onClick="click"
-        android:linksClickable="true"
-        />
+        android:linksClickable="true" />
 
     <Button
         android:id="@+id/button_Login"

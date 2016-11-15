@@ -7,20 +7,21 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+
 import ph.edu.apc.renzo.salesandproductreport.R;
 
 /**
- * Created by Renzo on 01/11/2016.
+ * Created by Renzo on 12/11/2016.
  */
 
-public class Expenses extends Fragment {
+public class ListOfProductsFragment extends Fragment {
 
-    public Expenses() {
+    public ListOfProductsFragment() {
 
     }
 
     @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
 
@@ -28,6 +29,7 @@ public class Expenses extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_expenses, container, false);
+        return inflater.inflate(R.layout.fragment_listofproducts, container, false);
+
     }
 }

@@ -18,6 +18,8 @@
         <activity android:name=".Activities.SignUpActivity"></activity>
         <activity android:name=".Activities.MainActivity"></activity>
         <activity android:name=".Activities.SalesActivity"></activity>
+        <activity android:name=".Activities.ProductsActivity"></activity>
+        <activity android:name=".Activities.ExpensesActivity"></activity>
     </application>
 
 </manifest>

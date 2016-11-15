@@ -21,6 +21,7 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true">
         <TextView
+            android:id="@+id/textView_BackElous"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="ELOUS STORE"
@@ -28,7 +29,9 @@
             android:textColor="@color/colorWhite"
             android:textStyle="bold"
             android:layout_marginLeft="50dp"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="10dp"
+            android:onClick="click"
+            android:linksClickable="true"/>
     </LinearLayout>
 
     <View
@@ -83,12 +86,14 @@
                 android:layout_marginTop="39dp"
                 android:layout_marginLeft="40dp"/>
             <EditText
-                android:id="@+id/editText_LoginName"
+                android:id="@+id/editText_SignupName"
                 android:layout_width="0dp"
                 android:layout_height="40dp"
                 android:layout_weight=".8"
                 android:layout_marginTop="35dp"
                 android:layout_marginLeft="10dp"
+                android:inputType="textPersonName"
+                android:maxLines="1"
                 android:hint="Name"
                 android:background="@drawable/rounded_edittext"
                 android:paddingLeft="5dp"/>
@@ -113,12 +118,14 @@
                 android:layout_marginTop="39dp"
                 android:layout_marginLeft="40dp"/>
             <EditText
-                android:id="@+id/editText_LoginUsername"
+                android:id="@+id/editText_SignupUsername"
                 android:layout_width="0dp"
                 android:layout_height="40dp"
                 android:layout_weight=".8"
                 android:layout_marginTop="35dp"
                 android:layout_marginLeft="10dp"
+                android:inputType="text"
+                android:maxLines="1"
                 android:hint="Username"
                 android:background="@drawable/rounded_edittext"
                 android:paddingLeft="5dp"/>
@@ -143,12 +150,14 @@
                 android:layout_marginTop="38dp"
                 android:layout_marginLeft="40dp" />
             <EditText
-                android:id="@+id/editText_LoginPassword"
+                android:id="@+id/editText_SignupPassword"
                 android:layout_width="0dp"
                 android:layout_height="40dp"
                 android:layout_weight=".8"
                 android:layout_marginTop="35dp"
                 android:layout_marginLeft="10dp"
+                android:inputType="textPassword"
+                android:maxLines="1"
                 android:hint="Password"
                 android:background="@drawable/rounded_edittext"
                 android:paddingLeft="5dp"/>
@@ -173,12 +182,14 @@
                 android:layout_marginTop="38dp"
                 android:layout_marginLeft="40dp" />
             <EditText
-                android:id="@+id/editText_LoginEmail"
+                android:id="@+id/editText_SignupEmail"
                 android:layout_width="0dp"
                 android:layout_height="40dp"
                 android:layout_weight=".8"
                 android:layout_marginTop="35dp"
                 android:layout_marginLeft="10dp"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
                 android:hint="Email"
                 android:background="@drawable/rounded_edittext"
                 android:paddingLeft="5dp"/>
