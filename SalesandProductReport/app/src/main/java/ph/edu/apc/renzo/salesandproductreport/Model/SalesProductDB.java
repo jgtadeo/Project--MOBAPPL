@@ -22,13 +22,15 @@ public class SalesProductDB extends SQLiteOpenHelper {
         //String query = "CREATE TABLE signup (id integer primary key not null autoincrement, name text not null" +
         //        "username text not null, password text not null, email text not null);";
         db.execSQL(SalesProductDBAdapter.TABLE_CREATE);
+        db.execSQL(SalesProductDBAdapter.TABLE_CREATE_SALES);
         this.db = db;
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         //String query = "DROP TABLE IF EXIST " + TABLE_NAME;
-        db.execSQL("DROP TABLE IF EXIST" + SalesProductDBAdapter.TABLE_NAME);
+        db.execSQL("DROP TABLE IF EXIST " + SalesProductDBAdapter.TABLE_NAME);
+        db.execSQL("DROP TABLE IF EXIST " + SalesProductDBAdapter.TABLE_NAME_SALES);
         this.onCreate(db);
     }
 }

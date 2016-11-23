@@ -8,8 +8,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import ph.edu.apc.renzo.salesandproductreport.Model.Information;
+import ph.edu.apc.renzo.salesandproductreport.Model.SalesProductDBAdapter;
 import ph.edu.apc.renzo.salesandproductreport.R;
 
 /**
@@ -18,6 +20,7 @@ import ph.edu.apc.renzo.salesandproductreport.R;
 
 public class SalesFragment extends Fragment {
 
+    private SalesProductDBAdapter salesproductDBAdapter = new SalesProductDBAdapter(getContext());
     private EditText date, gross, bread, grocery, eload, smart, globe, sun;
     private Button compute;
     private String dateStr;
@@ -87,15 +90,20 @@ public class SalesFragment extends Fragment {
                     globeInt = Integer.parseInt(globe.getText().toString());
                     sunInt = Integer.parseInt(sun.getText().toString());
 
-                    Information information = new Information();
-                    information.setDate(dateStr);
-                    information.setGross(grossInt);
-                    information.setBread(breadInt);
-                    information.setGrocery(groceryInt);
-                    information.setEload(eloadInt);
-                    information.setSmart(smartInt);
-                    information.setGlobe(globeInt);
-                    information.setSun(sunInt);
+                    Information salesinformation = new Information();
+                    salesinformation.setDate(dateStr);
+                    salesinformation.setGross(grossInt);
+                    salesinformation.setBread(breadInt);
+                    salesinformation.setGrocery(groceryInt);
+                    salesinformation.setEload(eloadInt);
+                    salesinformation.setSmart(smartInt);
+                    salesinformation.setGlobe(globeInt);
+                    salesinformation.setSun(sunInt);
+
+                    salesproductDBAdapter.insertSalesInformation(salesinformation);
+
+                    Toast.makeText(getContext(), "All sales information has been saved", Toast.LENGTH_LONG).show();
+
                 }
             }
         });

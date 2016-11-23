@@ -55,24 +55,25 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                 finish();
                 break;
             case R.id.button_SignUp:
-                namestr = name.getText().toString();
-                usernamestr = username.getText().toString();
-                passwordstr = password.getText().toString();
-                emailstr = email.getText().toString();
 
-                if (namestr.length() == 0) {
+                if (name.length() == 0) {
                     name.setError("Name is required");
                     return;
-                } else if (usernamestr.length() == 0) {
+                } else if (username.length() == 0) {
                     username.setError("Username is required");
                     return;
-                } else if (passwordstr.length() == 0) {
+                } else if (password.length() == 0) {
                     password.setError("Password is required");
                     return;
-                } else if (emailstr.length() == 0) {
+                } else if (email.length() == 0) {
                     email.setError("Email is required");
                     return;
                 } else {
+                    namestr = name.getText().toString();
+                    usernamestr = username.getText().toString();
+                    passwordstr = password.getText().toString();
+                    emailstr = email.getText().toString();
+
                     Information information = new Information();
                     information.setName(namestr);
                     information.setUsername(usernamestr);
