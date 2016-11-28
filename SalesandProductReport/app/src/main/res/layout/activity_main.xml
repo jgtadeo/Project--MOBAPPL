@@ -73,9 +73,12 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="250dp"
         android:text="Sales"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
         android:textSize="16sp"
         android:textColor="#0B4555"
-        android:background="@drawable/color_button"/>
+        android:background="@drawable/color_button"
+        android:drawableLeft="@drawable/ic_attach_money_black_24dp"/>
 
     <Button
         android:id="@+id/button_MainProducts"
@@ -85,9 +88,12 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="200dp"
         android:text="Products"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
         android:textSize="16sp"
         android:textColor="#0B4555"
-        android:background="@drawable/color_button"/>
+        android:background="@drawable/color_button"
+        android:drawableLeft="@drawable/ic_shopping_cart_black_24dp"/>
 
     <Button
         android:id="@+id/button_MainGraph"
@@ -96,10 +102,13 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="150dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
         android:text="Graph"
         android:textSize="16sp"
         android:textColor="#0B4555"
-        android:background="@drawable/color_button"/>
+        android:background="@drawable/color_button"
+        android:drawableLeft="@drawable/ic_trending_up_black_24dp"/>
 
     <Button
         android:id="@+id/button_MainExpenses"
@@ -108,11 +117,13 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="100dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
         android:text="Expenses"
         android:textSize="16sp"
         android:textColor="#0B4555"
         android:background="@drawable/color_button"
-        android:drawableRight="@drawable/ic_account_circle_black_18dp" />
+        android:drawableLeft="@drawable/ic_money_off_black_24dp" />
 
     <View
         android:layout_width="250dp"
