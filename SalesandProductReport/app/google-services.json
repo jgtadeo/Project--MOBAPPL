@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "401311093136",
+    "firebase_url": "https://salesandproductreport-91c99.firebaseio.com",
+    "project_id": "salesandproductreport-91c99",
+    "storage_bucket": "salesandproductreport-91c99.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:401311093136:android:66dcd8110cbaf556",
+        "android_client_info": {
+          "package_name": "ph.edu.apc.renzo.salesandproductreport"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "401311093136-rmdtakirinnkl0c6cklh6pksmn8v6ld1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ph.edu.apc.renzo.salesandproductreport",
+            "certificate_hash": "312D7080AF6766B3C885BFB4980F126C47C2B161"
+          }
+        },
+        {
+          "client_id": "401311093136-15bbcbu8o672s92n3fsbo3a042msq43v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGt3WOT0AW9ZrVGwPx0dMjcMnkiKpAUQ8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "401311093136-15bbcbu8o672s92n3fsbo3a042msq43v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
