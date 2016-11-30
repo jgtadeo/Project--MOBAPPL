@@ -197,6 +197,45 @@
                     android:textSize="16sp"
                     android:textColor="#0097A9"
                     android:background="@drawable/color_button" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="400dp">
+
+                <View
+                    android:layout_width="250dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colorLine"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginLeft="40dp">
+                </View>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="420dp">
+
+                <TextView
+                    android:id="@+id/textView_SalesLogout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Logout"
+                    android:linksClickable="true"
+                    android:textColor="@color/colorWhite"
+                    android:onClick="click"
+                    android:textColorLink="#0097A9"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="140dp"/>
+
             </LinearLayout>
 
         </RelativeLayout>
