@@ -2,18 +2,22 @@ package ph.edu.apc.renzo.salesandproductreport.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import ph.edu.apc.renzo.salesandproductreport.Model.Information;
-import ph.edu.apc.renzo.salesandproductreport.Model.SalesProductDB;
-import ph.edu.apc.renzo.salesandproductreport.Model.SalesProductDBAdapter;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+
 import ph.edu.apc.renzo.salesandproductreport.R;
 
 /**
@@ -22,11 +26,11 @@ import ph.edu.apc.renzo.salesandproductreport.R;
 
 public class SignUpActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private SalesProductDBAdapter salesproductDBAdapter = new SalesProductDBAdapter(this);
     private TextView back;
-    private EditText name, username, password, email;
-    private String namestr, usernamestr, passwordstr, emailstr;
+    private EditText editName, editUsername, editPassword, editEmail;
     private Button register;
+    private FirebaseAuth mAuth;
+    private ProgressBar progress;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -36,14 +40,18 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         back = (TextView)findViewById(R.id.textView_BackElous);
         back.setOnClickListener(this);
 
-        name = (EditText)findViewById(R.id.editText_SignupName);
-        username = (EditText)findViewById(R.id.editText_SignupUsername);
-        password = (EditText)findViewById(R.id.editText_SignupPassword);
-        password.setTransformationMethod(PasswordTransformationMethod.getInstance());
-        email = (EditText)findViewById(R.id.editText_SignupEmail);
+        editName = (EditText)findViewById(R.id.editText_SignupName);
+        editUsername = (EditText)findViewById(R.id.editText_SignupUsername);
+        editPassword = (EditText)findViewById(R.id.editText_SignupPassword);
+        editPassword.setTransformationMethod(PasswordTransformationMethod.getInstance());
+        editEmail = (EditText)findViewById(R.id.editText_SignupEmail);
 
         register = (Button)findViewById(R.id.button_SignUp);
         register.setOnClickListener(this);
+
+        mAuth = FirebaseAuth.getInstance();
+
+        progress = (ProgressBar)findViewById(R.id.progressBar);
     }
 
     @Override
@@ -56,38 +64,44 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.button_SignUp:
 
-                if (name.length() == 0) {
-                    name.setError("Name is required");
-                    return;
-                } else if (username.length() == 0) {
-                    username.setError("Username is required");
-                    return;
-                } else if (password.length() == 0) {
-                    password.setError("Password is required");
-                    return;
-                } else if (email.length() == 0) {
-                    email.setError("Email is required");
-                    return;
-                } else {
-                    namestr = name.getText().toString();
-                    usernamestr = username.getText().toString();
-                    passwordstr = password.getText().toString();
-                    emailstr = email.getText().toString();
+                String Name = editName.getText().toString().trim();
+                String Username = editUsername.getText().toString().trim();
+                String Password = editPassword.getText().toString().trim();
+                String Email = editEmail.getText().toString().trim();
 
-                    Information information = new Information();
-                    information.setName(namestr);
-                    information.setUsername(usernamestr);
-                    information.setPassword(passwordstr);
-                    information.setEmail(emailstr);
-
-                    salesproductDBAdapter.insertInformation(information);
-
-                    Intent signup = new Intent(SignUpActivity.this, LoginActivity.class);
-                    startActivity(signup);
-                    finish();
-                    Toast.makeText(this, "Successfully signed up!", Toast.LENGTH_LONG).show();
-                    break;
+                if (Name.isEmpty() || Username.isEmpty() || Password.isEmpty() || Email.isEmpty()) {
+                    AlertDialog.Builder builder = new AlertDialog.Builder(SignUpActivity.this);
+                    builder.setMessage("Please make sure to input all fields!")
+                            .setTitle("Sign Up Error!")
+                            .setPositiveButton(android.R.string.ok, null);
+                    AlertDialog dialog = builder.create();
+                    dialog.show();
                 }
+
+                progress.setVisibility(View.VISIBLE);
+
+                mAuth.createUserWithEmailAndPassword(Email, Password)
+                        .addOnCompleteListener(SignUpActivity.this, new OnCompleteListener<AuthResult>() {
+                            @Override
+                            public void onComplete(@NonNull Task<AuthResult> task) {
+                                if (task.isSuccessful()) {
+                                    Intent signup = new Intent(SignUpActivity.this, LoginActivity.class);
+                                    signup.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                    signup.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                                    startActivity(signup);
+                                    finish();
+                            } else {
+                                AlertDialog.Builder builder = new AlertDialog.Builder(SignUpActivity.this);
+                                    builder.setMessage(task.getException().getMessage())
+                                            .setTitle("Sign Up Error")
+                                            .setPositiveButton(android.R.string.ok, null);
+                                    AlertDialog dialog = builder.create();
+                                    dialog.show();
+                                }
+                                progress.setVisibility(View.GONE);
+                        }
+                });
+                break;
         }
     }
 

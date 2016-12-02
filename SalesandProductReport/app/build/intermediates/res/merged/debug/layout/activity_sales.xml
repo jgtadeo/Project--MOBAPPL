@@ -14,46 +14,228 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true">
+        android:layout_centerHorizontal="true" >
         <TextView
             android:id="@+id/textView_BackElous"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="65dp"
-            android:layout_marginTop="10dp"
             android:text="ELOUS STORE"
             android:textSize="30sp"
             android:textColor="@color/colorWhite"
             android:textStyle="bold"
-            android:onClick="click"
-            android:linksClickable="true"/>
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="10dp" />
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <android.support.design.widget.TabLayout
-            android:id="@+id/tabs"
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentLeft="true"
+    android:layout_marginTop="50dp">
+
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="70dp"
-            app:tabGravity="fill"
-            app:tabIndicatorColor="@color/colorLine"
-            app:tabIndicatorHeight="2dp"
-            app:tabTextColor="@color/colorTab"
-            app:tabSelectedTextColor="@color/colorWhite"
-            app:tabMode="fixed"
-            android:background="@color/colorAccent" />
-    </LinearLayout>
+            android:orientation="vertical">
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/viewpager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="110dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    app:srcCompat="@drawable/ic_date_range_black_18dp"
+                    android:layout_marginTop="39dp"
+                    android:layout_marginLeft="40dp"/>
+                <EditText
+                    android:id="@+id/editText_SaleDate"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".8"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:maxLines="1"
+                    android:hint="Date"
+                    android:inputType="text"
+                    android:background="@drawable/rounded_edittext"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"/>
+            </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    app:srcCompat="@drawable/ic_monetization_on_black_24dp"
+                    android:layout_marginTop="39dp"
+                    android:layout_marginLeft="40dp"/>
+                <EditText
+                    android:id="@+id/editText_SaleGross"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".8"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:maxLines="1"
+                    android:hint="Gross Sales"
+                    android:inputType="number"
+                    android:background="@drawable/rounded_edittext"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    app:srcCompat="@drawable/ic_add_shopping_cart_black_18dp"
+                    android:layout_marginTop="39dp"
+                    android:layout_marginLeft="40dp"/>
+                <EditText
+                    android:id="@+id/editText_SaleBread"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".4"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:maxLines="1"
+                    android:hint="Bread"
+                    android:inputType="number"
+                    android:background="@drawable/rounded_edittext"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"/>
+                <EditText
+                    android:id="@+id/editText_SaleGrocery"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".4"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:maxLines="1"
+                    android:hint="Grocery"
+                    android:inputType="number"
+                    android:background="@drawable/rounded_edittext"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    app:srcCompat="@drawable/ic_tap_and_play_black_18dp"
+                    android:layout_marginTop="39dp"
+                    android:layout_marginLeft="40dp"/>
+                <EditText
+                    android:id="@+id/editText_SaleEload"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".8"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:maxLines="1"
+                    android:hint="E - load"
+                    android:inputType="number"
+                    android:background="@drawable/rounded_edittext"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    app:srcCompat="@drawable/ic_sms_black_18dp"
+                    android:layout_marginTop="39dp"
+                    android:layout_marginLeft="40dp"/>
+                <EditText
+                    android:id="@+id/editText_SaleSmart"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".26"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:maxLines="1"
+                    android:hint="Smart"
+                    android:inputType="number"
+                    android:background="@drawable/rounded_edittext"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"/>
+                <EditText
+                    android:id="@+id/editText_SaleGlobe"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".26"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:maxLines="1"
+                    android:hint="Globe"
+                    android:inputType="number"
+                    android:background="@drawable/rounded_edittext"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp" />
+                <EditText
+                    android:id="@+id/editText_SaleSun"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".26"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:maxLines="1"
+                    android:hint="Sun"
+                    android:inputType="number"
+                    android:background="@drawable/rounded_edittext"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="330dp"
+                android:layout_marginLeft="235dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/button_SalesCompute"
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="135dp"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="15dp"
+                    android:text="Compute"
+                    android:textSize="16sp"
+                    android:textColor="#0B4555"
+                    android:background="@drawable/color_button" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
 </RelativeLayout>

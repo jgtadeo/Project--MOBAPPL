@@ -3,20 +3,11 @@ package ph.edu.apc.renzo.salesandproductreport.Activities;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import ph.edu.apc.renzo.salesandproductreport.Fragments.ListOfProductsFragment;
-import ph.edu.apc.renzo.salesandproductreport.Fragments.ProductsFragment;
 import ph.edu.apc.renzo.salesandproductreport.R;
 
 /**
@@ -26,22 +17,22 @@ import ph.edu.apc.renzo.salesandproductreport.R;
 public class ProductsActivity extends AppCompatActivity {
 
     private TextView back;
-    private ViewPager viewPager;
-    private TabLayout tabLayout;
+    private EditText editProductName, editCategory, editCost, editPrice, editQuantity, editWeight;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_products);
 
+        editProductName = (EditText)findViewById(R.id.editText_ProductName);
+        editCategory = (EditText)findViewById(R.id.editText_ProductCategory);
+        editCost = (EditText)findViewById(R.id.editText_ProductCost);
+        editPrice = (EditText)findViewById(R.id.editText_ProductPrice);
+        editQuantity = (EditText)findViewById(R.id.editText_ProductQuantity);
+        editWeight = (EditText)findViewById(R.id.editText_ProductWeight);
+
         back();
 
-        viewPager = (ViewPager)findViewById(R.id.viewpager);
-        setupViewPager(viewPager);
-
-        tabLayout = (TabLayout)findViewById(R.id.tabs);
-        tabLayout.setupWithViewPager(viewPager);
-        setupTabIcons();
     }
 
     private void back() {
@@ -54,53 +45,6 @@ public class ProductsActivity extends AppCompatActivity {
                 finish();
             }
         });
-    }
-
-    protected void setupTabIcons() {
-        tabLayout.getTabAt(0).setText("INPUT PRODUCTS");
-        tabLayout.getTabAt(1).setText("LIST OF PRODUCTS");
-    }
-
-    protected void setupViewPager(ViewPager viewPager) {
-        ViewPageAdapter adapter = new ViewPageAdapter(getSupportFragmentManager());
-        adapter.addFragment(new ProductsFragment(), "");
-        adapter.addFragment(new ListOfProductsFragment(), "");
-        viewPager.setAdapter(adapter);
-    }
-
-    class ViewPageAdapter extends FragmentPagerAdapter {
-
-        private final List<Fragment> pFragmentList = new ArrayList<>();
-        private final List<String> pFragmentTitleList = new ArrayList<>();
-
-        public ViewPageAdapter(FragmentManager manager) {
-            super(manager);
-        }
-
-        @Override
-        public Fragment getItem(int position) {
-            return pFragmentList.get(position);
-        }
-
-        @Override
-        public int getCount() {
-            return pFragmentList.size();
-        }
-
-        public void addFragment(ProductsFragment fragment, String title) {
-            pFragmentList.add(fragment);
-            pFragmentTitleList.add(title);
-        }
-
-        public void addFragment(ListOfProductsFragment fragment, String title) {
-            pFragmentList.add(fragment);
-            pFragmentTitleList.add(title);
-        }
-
-        @Override
-        public CharSequence getPageTitle(int position) {
-            return pFragmentTitleList.get(position);
-        }
     }
 
     @Override

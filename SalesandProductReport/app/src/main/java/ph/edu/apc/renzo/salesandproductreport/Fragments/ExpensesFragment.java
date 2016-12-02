@@ -41,11 +41,11 @@ public class ExpensesFragment extends Fragment implements View.OnClickListener{
                              @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_expenses, container, false);
 
-        date = (EditText) view.findViewById(R.id.editText_date);
-        expense = (EditText) view.findViewById(R.id.editText_expense);
-        totalcost = (EditText) view.findViewById(R.id.editText_totalcost);
+        //date = (EditText) view.findViewById(R.id.editText_date);
+        //expense = (EditText) view.findViewById(R.id.editText_expense);
+        //totalcost = (EditText) view.findViewById(R.id.editText_totalcost);
 
-        logout = (TextView)view.findViewById(R.id.textView_ExpensesLogout);
+        //logout = (TextView)view.findViewById(R.id.textView_ExpensesLogout);
         logout.setPaintFlags(Paint.UNDERLINE_TEXT_FLAG);
         logout.setOnClickListener(this);
 

@@ -96,7 +96,8 @@
                 android:maxLines="1"
                 android:hint="Name"
                 android:background="@drawable/rounded_edittext"
-                android:paddingLeft="5dp"/>
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -128,7 +129,8 @@
                 android:maxLines="1"
                 android:hint="Username"
                 android:background="@drawable/rounded_edittext"
-                android:paddingLeft="5dp"/>
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -160,7 +162,8 @@
                 android:maxLines="1"
                 android:hint="Password"
                 android:background="@drawable/rounded_edittext"
-                android:paddingLeft="5dp"/>
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -192,7 +195,8 @@
                 android:maxLines="1"
                 android:hint="Email"
                 android:background="@drawable/rounded_edittext"
-                android:paddingLeft="5dp"/>
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -207,5 +211,13 @@
         android:textSize="16sp"
         android:textColor="#0097A9"
         android:background="@drawable/rounded_button" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
 
 </RelativeLayout>

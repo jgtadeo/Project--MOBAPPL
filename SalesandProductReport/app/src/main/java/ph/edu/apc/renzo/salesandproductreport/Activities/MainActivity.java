@@ -19,7 +19,7 @@ import ph.edu.apc.renzo.salesandproductreport.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private Button sales, products, graph, expenses;
+    private Button sales, products, graph, expenses, records;
     private TextView logout;
 
     @Override
@@ -33,8 +33,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         products = (Button)findViewById(R.id.button_MainProducts);
         products.setOnClickListener(this);
 
+        graph = (Button)findViewById(R.id.button_MainGraph);
+        graph.setOnClickListener(this);
+
         expenses = (Button)findViewById(R.id.button_MainExpenses);
         expenses.setOnClickListener(this);
+
+        records = (Button)findViewById(R.id.button_MainRecords);
+        records.setOnClickListener(this);
 
         logout = (TextView)findViewById(R.id.textView_MainLogout);
         logout.setPaintFlags(Paint.UNDERLINE_TEXT_FLAG);
@@ -57,9 +63,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 finish();
                 break;
 
+            case R.id.button_MainGraph:
+                Intent graph = new Intent(MainActivity.this, GraphActivity.class);
+                startActivity(graph);
+                finish();
+                break;
+
             case R.id.button_MainExpenses:
                 Intent expenses = new Intent(MainActivity.this, ExpensesActivity.class);
                 startActivity(expenses);
+                finish();
+                break;
+
+            case R.id.button_MainRecords:
+                Intent records = new Intent(MainActivity.this, RecordsActivity.class);
+                startActivity(records);
                 finish();
                 break;
 
