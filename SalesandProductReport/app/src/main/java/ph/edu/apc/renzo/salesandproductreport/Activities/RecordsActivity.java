@@ -58,7 +58,7 @@ public class RecordsActivity extends AppCompatActivity {
     }
 
     protected void setupTabIcons() {
-        tabLayout.getTabAt(0).setText("LIST OF SALES");
+        tabLayout.getTabAt(0).setText("LIST OF" + "\n" + "SALES");
         tabLayout.getTabAt(1).setText("LIST OF PRODUCTS");
         tabLayout.getTabAt(2).setText("LIST OF EXPENSES");
     }

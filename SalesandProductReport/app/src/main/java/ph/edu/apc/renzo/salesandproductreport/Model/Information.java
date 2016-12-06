@@ -7,8 +7,11 @@ package ph.edu.apc.renzo.salesandproductreport.Model;
 
 public class Information {
 
-    String name, username, password, email, date;
-    int gross, bread, grocery, eload, smart, globe, sun;
+    String name, username, password, email;
+
+    public Information() {
+
+    }
 
     ////////////////////////////////////////////////////////////////////////
     //////////////////////////SIGN UP///////////////////////////////////////
@@ -44,73 +47,5 @@ public class Information {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    /////////////////////////////////////////////////////////////////////
-    ///////////////////////////////SALES/////////////////////////////////
-    /////////////////////////////////////////////////////////////////////
-
-    public String getDate() {
-        return date;
-    }
-
-    public void setDate(String date) {
-        this.date = date;
-    }
-
-    public int getGross() {
-        return gross;
-    }
-
-    public void setGross(int gross) {
-        this.gross = gross;
-    }
-
-    public int getBread() {
-        return bread;
-    }
-
-    public void setBread(int bread) {
-        this.bread = bread;
-    }
-
-    public int getGrocery() {
-        return grocery;
-    }
-
-    public void setGrocery(int grocery) {
-        this.grocery = grocery;
-    }
-
-    public int getEload() {
-        return eload;
-    }
-
-    public void setEload(int eload) {
-        this.eload = eload;
-    }
-
-    public int getSmart() {
-        return smart;
-    }
-
-    public void setSmart(int smart) {
-        this.smart = smart;
-    }
-
-    public int getGlobe() {
-        return globe;
-    }
-
-    public void setGlobe(int globe) {
-        this.globe = globe;
-    }
-
-    public int getSun() {
-        return sun;
-    }
-
-    public void setSun(int sun) {
-        this.sun = sun;
     }
 }

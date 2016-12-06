@@ -11,6 +11,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 import ph.edu.apc.renzo.salesandproductreport.R;
 
 /**
@@ -21,6 +24,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private Button sales, products, graph, expenses, records;
     private TextView logout;
+    private FirebaseAuth mAuth;
+    private FirebaseUser mUser;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -46,6 +51,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         logout.setPaintFlags(Paint.UNDERLINE_TEXT_FLAG);
         logout.setOnClickListener(this);
 
+        mAuth = FirebaseAuth.getInstance();
+        mUser = mAuth.getInstance().getCurrentUser();
     }
 
     @Override

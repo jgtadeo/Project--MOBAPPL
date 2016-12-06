@@ -51,8 +51,8 @@
                     app:srcCompat="@drawable/ic_date_range_black_18dp"
                     android:layout_marginTop="39dp"
                     android:layout_marginLeft="40dp"/>
-                <EditText
-                    android:id="@+id/editText_date"
+                <TextView
+                    android:id="@+id/textView_ExpensesDate"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_weight=".8"
@@ -61,8 +61,19 @@
                     android:maxLines="1"
                     android:hint="Date"
                     android:inputType="text"
-                    android:background="@drawable/rounded_edittext"
                     android:paddingLeft="5dp"/>
+                <Button
+                    android:id="@+id/button_ExpensesAddDate"
+                    android:layout_width="110dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginRight="55dp"
+                    android:layout_weight=".2"
+                    android:text="Add date"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    android:textColor="#0B4555"
+                    android:background="@drawable/color_button"/>
             </LinearLayout>
 
             <LinearLayout
@@ -124,7 +135,7 @@
                 android:orientation="horizontal"
                 android:weightSum="1">
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/button_ExpensesDone"
                     android:layout_width="90dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="20dp"
@@ -135,7 +146,7 @@
                     android:textColor="#0097A9"
                     android:background="@drawable/color_button" />
                 <Button
-                    android:id="@+id/button_SalesCompute"
+                    android:id="@+id/button_ExpensesAdd"
                     android:layout_width="90dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="20dp"
@@ -145,25 +156,6 @@
                     android:textSize="16sp"
                     android:textColor="#0097A9"
                     android:background="@drawable/color_button" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="420dp">
-                <TextView
-                    android:id="@+id/textView_ExpensesLogout"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Logout"
-                    android:linksClickable="true"
-                    android:textColor="@color/colorWhite"
-                    android:onClick="click"
-                    android:textColorLink="#0097A9"
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginLeft="140dp"/>
             </LinearLayout>
         </RelativeLayout>
     </ScrollView>

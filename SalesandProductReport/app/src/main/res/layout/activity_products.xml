@@ -191,9 +191,46 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="250dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    app:srcCompat="@drawable/ic_face_black_18dp"
+                    android:layout_marginTop="39dp"
+                    android:layout_marginLeft="40dp"/>
+                <TextView
+                    android:id="@+id/textView_ProductDate"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight=".8"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:maxLines="1"
+                    android:hint="Expiration Date"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"/>
+                <Button
+                    android:id="@+id/button_ProductAddDate"
+                    android:layout_width="110dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight=".1"
+                    android:text="Add date"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    android:textColor="#0B4555"
+                    android:background="@drawable/color_button"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="330dp"
+                android:layout_marginTop="350dp"
                 android:layout_marginLeft="235dp"
                 android:orientation="horizontal">
                 <Button
