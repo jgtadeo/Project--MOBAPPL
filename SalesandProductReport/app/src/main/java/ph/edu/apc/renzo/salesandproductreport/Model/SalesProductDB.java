@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 /**
  * Created by Renzo on 06/11/2016.
  */
-
+/*
 public class SalesProductDB extends SQLiteOpenHelper {
 
     SQLiteDatabase db;
@@ -33,4 +33,4 @@ public class SalesProductDB extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXIST " + SalesProductDBAdapter.TABLE_NAME_SALES);
         this.onCreate(db);
     }
-}
+}*/

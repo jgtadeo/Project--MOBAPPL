@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteDatabase;
 /**
  * Created by Renzo on 09/11/2016.
  */
-
+/*
 public class SalesProductDBAdapter {
 
     private SalesProductDB salesproductDB;
@@ -130,4 +130,4 @@ public class SalesProductDBAdapter {
     }
 
 }
-
+*/

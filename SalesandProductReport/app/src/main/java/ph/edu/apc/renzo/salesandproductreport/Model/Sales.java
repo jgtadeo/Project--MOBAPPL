@@ -6,81 +6,81 @@ package ph.edu.apc.renzo.salesandproductreport.Model;
 
 public class Sales {
 
-    String salesDate;
-    double salesGross, salesBread, salesGrocery, salesEload, salesSmart, salesGlobe, salesSun;
+    String date;
+    double gross, bread, grocery, eload, smart, globe, sun;
 
-    public Sales(String salesDate, Double salesGross, Double salesBread, Double salesGrocery, Double salesSmart, Double salesEload, Double salesGlobe, Double salesSun) {
-        this.salesDate = salesDate;
-        this.salesGross = Double.parseDouble(String.valueOf(salesGross));
-        this.salesBread = Double.parseDouble(String.valueOf(salesBread));
-        this.salesGrocery = Double.parseDouble(String.valueOf(salesGrocery));
-        this.salesSmart = Double.parseDouble(String.valueOf(salesSmart));
-        this.salesEload = Double.parseDouble(String.valueOf(salesEload));
-        this.salesGlobe = Double.parseDouble(String.valueOf(salesGlobe));
-        this.salesSun = Double.parseDouble(String.valueOf(salesSun));
+    public Sales(String date, double gross, double grocery, double bread, double eload, double smart, double globe, double sun) {
+        this.date = date;
+        this.gross = gross;
+        this.grocery = grocery;
+        this.bread = bread;
+        this.eload = eload;
+        this.smart = smart;
+        this.globe = globe;
+        this.sun = sun;
     }
 
-    public String getSalesDate() {
-        return salesDate;
+    public String getDate() {
+        return date;
     }
 
-    public void setSalesDate(String salesDate) {
-        this.salesDate = salesDate;
+    public void setDate(String date) {
+        this.date = date;
     }
 
-    public double getSalesGross() {
-        return salesGross;
+    public double getGross() {
+        return gross;
     }
 
-    public void setSalesGross(float salesGross) {
-        this.salesGross = salesGross;
+    public void setGross(double gross) {
+        this.gross = gross;
     }
 
-    public double getSalesBread() {
-        return salesBread;
+    public double getBread() {
+        return bread;
     }
 
-    public void setSalesBread(float salesBread) {
-        this.salesBread = salesBread;
+    public void setBread(double bread) {
+        this.bread = bread;
     }
 
-    public double getSalesGrocery() {
-        return salesGrocery;
+    public double getGrocery() {
+        return grocery;
     }
 
-    public void setSalesGrocery(float salesGrocery) {
-        this.salesGrocery = salesGrocery;
+    public void setGrocery(double grocery) {
+        this.grocery = grocery;
     }
 
-    public double getSalesEload() {
-        return salesEload;
+    public double getEload() {
+        return eload;
     }
 
-    public void setSalesEload(int salesEload) {
-        this.salesEload = salesEload;
+    public void setEload(double eload) {
+        this.eload = eload;
     }
 
-    public double getSalesSmart() {
-        return salesSmart;
+    public double getSmart() {
+        return smart;
     }
 
-    public void setSalesSmart(int salesSmart) {
-        this.salesSmart = salesSmart;
+    public void setSmart(double smart) {
+        this.smart = smart;
     }
 
-    public double getSalesGlobe() {
-        return salesGlobe;
+    public double getGlobe() {
+        return globe;
     }
 
-    public void setSalesGlobe(int salesGlobe) {
-        this.salesGlobe = salesGlobe;
+    public void setGlobe(double globe) {
+        this.globe = globe;
     }
 
-    public double getSalesSun() {
-        return salesSun;
+    public double getSun() {
+        return sun;
     }
 
-    public void setSalesSun(int salesSun) {
-        this.salesSun = salesSun;
+    public void setSun(double sun) {
+        this.sun = sun;
     }
 }

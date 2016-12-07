@@ -4,6 +4,7 @@ import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -11,17 +12,17 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.text.DateFormat;
 import java.util.Calendar;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.Date;
 
-import ph.edu.apc.renzo.salesandproductreport.Model.Sales;
 import ph.edu.apc.renzo.salesandproductreport.R;
 
 /**
@@ -37,6 +38,7 @@ public class SalesActivity extends AppCompatActivity implements View.OnClickList
     private FirebaseUser mUser;
     private DatabaseReference database;
     private String mUid;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -61,7 +63,12 @@ public class SalesActivity extends AppCompatActivity implements View.OnClickList
         compute = (Button)findViewById(R.id.button_SalesCompute);
         compute.setOnClickListener(this);
 
+        mAuth = FirebaseAuth.getInstance();
+        mUser = mAuth.getCurrentUser();
+        mUid = mUser.getUid();
+
         database = FirebaseDatabase.getInstance().getReference();
+
     }
 
     @Override
@@ -89,26 +96,57 @@ public class SalesActivity extends AppCompatActivity implements View.OnClickList
                 break;
 
             case R.id.button_SalesCompute:
-                String Date = textDate.getText().toString();
-                Double Gross = Double.valueOf(String.valueOf(Double.parseDouble(editGross.getText().toString())));
-                Double Bread = Double.valueOf(String.valueOf(Double.parseDouble(editBread.getText().toString())));
-                Double Grocery = Double.valueOf(String.valueOf(Double.parseDouble(editGrocery.getText().toString())));
-                Double Eload = Double.valueOf(String.valueOf(Double.parseDouble(editEload.getText().toString())));
-                Double Smart = Double.valueOf(String.valueOf(Double.parseDouble(editSmart.getText().toString())));
-                Double Globe = Double.valueOf(String.valueOf(Double.parseDouble(editGlobe.getText().toString())));
-                Double Sun = Double.valueOf(String.valueOf(Double.parseDouble(editSun.getText().toString())));
+                if (textDate.length() == 0) {
+                    AlertDialog.Builder builder = new AlertDialog.Builder(SalesActivity.this);
+                    builder.setMessage("Please choose a date")
+                            .setTitle("Unknown Date Error!")
+                            .setPositiveButton(android.R.string.ok, null);
+                    AlertDialog dialog = builder.create();
+                    dialog.show();
+                    return;
+                } else if (editGross.getText().toString().isEmpty()) {
+                    //editGross.setError("Input gross");
+                    return;
+                } else if (editBread.getText().toString().isEmpty()) {
+                    editBread.setError("Input bread");
+                    return;
+                } else if (editGrocery.getText().toString().isEmpty()) {
+                    editGrocery.setError("Input grocery");
+                    return;
+                } else if (editEload.getText().toString().isEmpty()) {
+                    editEload.setError("Input eload");
+                    return;
+                } else if (editSmart.getText().toString().isEmpty()) {
+                    editSmart.setError("Input smart");
+                    return;
+                } else if (editGlobe.getText().toString().isEmpty()) {
+                    editGlobe.setError("Input globe");
+                    return;
+                } else if (editSun.getText().toString().isEmpty()) {
+                    editSun.setError("Input sun");
+                    return;
+                } else {
+                    String Date = textDate.getText().toString();
+                    Double Gross = Double.parseDouble(editGross.getText().toString());
+                    Double Bread = Double.parseDouble(editBread.getText().toString());
+                    Double Grocery = Double.parseDouble(editGrocery.getText().toString());
+                    Double Eload = Double.parseDouble(editEload.getText().toString());
+                    Double Smart = Double.parseDouble(editSmart.getText().toString());
+                    Double Globe = Double.parseDouble(editGlobe.getText().toString());
+                    Double Sun = Double.parseDouble(editSun.getText().toString());
 
-                addSales(Date, Gross, Bread, Grocery, Eload, Smart, Globe, Sun);
+                    addSales(Date, Gross, Bread, Grocery, Eload, Smart, Globe, Sun);
+                }
+                break;
+            }
         }
-    }
 
-    private void addSales(String Date, Double Gross, Double Bread, Double Grocery, Double Eload, Double Smart, Double Globe, Double Sun) {
+    private void addSales(String Date, Double Gross, Double Bread, Double Grocery,
+                          Double Eload, Double Smart, Double Globe, Double Sun) {
 
         double computeGross, computeEload;
 
-        mAuth = FirebaseAuth.getInstance();
-        mUser = mAuth.getCurrentUser();
-        mUid = mUser.getUid();
+        String dateStamp = DateFormat.getDateInstance().format(new Date());
 
         Log.d("debug", "Date:" + Date);
         Log.d("debug", "Gross:" + Gross);
@@ -119,15 +157,33 @@ public class SalesActivity extends AppCompatActivity implements View.OnClickList
         Log.d("debug", "Globe:" + Globe);
         Log.d("debug", "Sun:" + Sun);
 
-        Sales sales = new Sales(Date, Gross, Bread, Grocery, Eload, Smart, Globe, Sun);
-
         computeGross = Bread + Grocery;
         Log.d("debug", "Computed Gross:" + computeGross);
 
         computeEload = Smart + Globe + Sun;
         Log.d("debug", "Computed Eload:" + computeEload);
 
-        database.child("users").child(mUid);
+        database.child("users").child(mUid).child("sales").child(dateStamp).push().setValue("date: " + Date);
+        database.child("users").child(mUid).child("sales").child(dateStamp).push().setValue("gross: " + Gross);
+        database.child("users").child(mUid).child("sales").child(dateStamp).push().setValue("computed_gross: " + computeGross);
+        database.child("users").child(mUid).child("sales").child(dateStamp).push().setValue("grocery: " + Grocery);
+        database.child("users").child(mUid).child("sales").child(dateStamp).push().setValue("bread: " + Bread);
+        database.child("users").child(mUid).child("sales").child(dateStamp).push().setValue("eload: " + Eload);
+        database.child("users").child(mUid).child("sales").child(dateStamp).push().setValue("computed_eload: " + computeEload);
+        database.child("users").child(mUid).child("sales").child(dateStamp).push().setValue("smart: " + Smart);
+        database.child("users").child(mUid).child("sales").child(dateStamp).push().setValue("globe: " + Globe);
+        database.child("users").child(mUid).child("sales").child(dateStamp).push().setValue("sun: " + Sun);
+
+        Toast.makeText(this, "All information has been saved!", Toast.LENGTH_LONG).show();
+
+        textDate.setText("");
+        editGross.setText("");
+        editBread.setText("");
+        editGrocery.setText("");
+        editEload.setText("");
+        editSmart.setText("");
+        editGlobe.setText("");
+        editSun.setText("");
     }
 
     @Override

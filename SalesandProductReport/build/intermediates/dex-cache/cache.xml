@@ -66,21 +66,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\10.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="8f128aeeb7e31271b28a7adb9dac1f3a6ed9f5e7">
-        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-database-10.0.1_95a25e764648d30fbbb7a323cd5b50d4f83bd4c3.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.3"
         sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
         <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.4.0_6023d7aa46fc2480dc8dfae9bc220b5ae411316d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8f128aeeb7e31271b28a7adb9dac1f3a6ed9f5e7">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-database-10.0.1_95a25e764648d30fbbb7a323cd5b50d4f83bd4c3.jar" />
     </item>
     <item
         is-multidex="false"
