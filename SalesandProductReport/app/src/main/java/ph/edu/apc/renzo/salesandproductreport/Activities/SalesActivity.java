@@ -163,16 +163,16 @@ public class SalesActivity extends AppCompatActivity implements View.OnClickList
         computeEload = Smart + Globe + Sun;
         Log.d("debug", "Computed Eload:" + computeEload);
 
-        database.child("users").child(mUid).child("sales").child(dateStamp).push().setValue("date: " + Date);
-        database.child("users").child(mUid).child("sales").child(dateStamp).push().setValue("gross: " + Gross);
-        database.child("users").child(mUid).child("sales").child(dateStamp).push().setValue("computed_gross: " + computeGross);
-        database.child("users").child(mUid).child("sales").child(dateStamp).push().setValue("grocery: " + Grocery);
-        database.child("users").child(mUid).child("sales").child(dateStamp).push().setValue("bread: " + Bread);
-        database.child("users").child(mUid).child("sales").child(dateStamp).push().setValue("eload: " + Eload);
-        database.child("users").child(mUid).child("sales").child(dateStamp).push().setValue("computed_eload: " + computeEload);
-        database.child("users").child(mUid).child("sales").child(dateStamp).push().setValue("smart: " + Smart);
-        database.child("users").child(mUid).child("sales").child(dateStamp).push().setValue("globe: " + Globe);
-        database.child("users").child(mUid).child("sales").child(dateStamp).push().setValue("sun: " + Sun);
+        database.child("users").child(mUid).child(dateStamp).child("sales").push().setValue("date: " + Date );
+        database.child("users").child(mUid).child(dateStamp).child("sales").push().setValue("gross: " + Gross);
+        database.child("users").child(mUid).child(dateStamp).child("sales").push().setValue("computed_gross: " + computeGross);
+        database.child("users").child(mUid).child(dateStamp).child("sales").push().setValue("grocery: " + Grocery);
+        database.child("users").child(mUid).child(dateStamp).child("sales").push().setValue("bread: " + Bread);
+        database.child("users").child(mUid).child(dateStamp).child("sales").push().setValue("eload: " + Eload);
+        database.child("users").child(mUid).child(dateStamp).child("sales").push().setValue("computed_eload: " + computeEload);
+        database.child("users").child(mUid).child(dateStamp).child("sales").push().setValue("smart: " + Smart);
+        database.child("users").child(mUid).child(dateStamp).child("sales").push().setValue("globe: " + Globe);
+        database.child("users").child(mUid).child(dateStamp).child("sales").push().setValue("sun: " + Sun);
 
         Toast.makeText(this, "All information has been saved!", Toast.LENGTH_LONG).show();
 

@@ -19,10 +19,6 @@ import com.google.firebase.auth.FirebaseAuth;
 import ph.edu.apc.renzo.salesandproductreport.Model.Information;
 import ph.edu.apc.renzo.salesandproductreport.R;
 
-/**
- * Created by Renzo on 02/12/2016.
- */
-
 public class ForgotPasswordActivity extends AppCompatActivity implements View.OnClickListener{
 
     private TextView back;
@@ -73,7 +69,7 @@ public class ForgotPasswordActivity extends AppCompatActivity implements View.On
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
                             if (task.isSuccessful()) {
-                                Toast.makeText(ForgotPasswordActivity.this, "We have sent you instructions to reset your password!", Toast.LENGTH_LONG).show();
+                                Toast.makeText(ForgotPasswordActivity.this, "We have sent instructions to your email to reset your password!", Toast.LENGTH_LONG).show();
                                 forgotEmail.setText("");
                             } else {
                                 Toast.makeText(ForgotPasswordActivity.this, "Failed to send reset email!", Toast.LENGTH_SHORT).show();

@@ -29,10 +29,6 @@ import ph.edu.apc.renzo.salesandproductreport.Fragments.ExpensesFragment;
 import ph.edu.apc.renzo.salesandproductreport.Fragments.ListOfExpensesFragment;
 import ph.edu.apc.renzo.salesandproductreport.R;
 
-/**
- * Created by Renzo on 11/11/2016.
- */
-
 public class ExpensesActivity extends AppCompatActivity implements View.OnClickListener{
 
     private TextView back, textDate;

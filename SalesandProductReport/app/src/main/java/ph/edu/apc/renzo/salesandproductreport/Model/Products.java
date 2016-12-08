@@ -6,11 +6,17 @@ package ph.edu.apc.renzo.salesandproductreport.Model;
 
 public class Products {
 
-    String productDate;
-    int productName, productCategory, productCost, productPrice, productQuantity, productWeight;
+    String productDate, productName, productCategory;
+    double productCost, productPrice, productQuantity, productWeight;
 
-    public Products() {
-
+    public Products(String productDate, String productName, String productCategory, double productCost, double productPrice, double productQuantity, double productWeight) {
+        this.productDate = productDate;
+        this.productName = productName;
+        this.productCategory = productCategory;
+        this.productCost = productCost;
+        this.productPrice = productPrice;
+        this.productQuantity = productQuantity;
+        this.productWeight = productWeight;
     }
 
     public String getProductDate() {
@@ -21,51 +27,51 @@ public class Products {
         this.productDate = productDate;
     }
 
-    public int getProductName() {
+    public String getProductName() {
         return productName;
     }
 
-    public void setProductName(int productName) {
+    public void setProductName(String productName) {
         this.productName = productName;
     }
 
-    public int getProductCategory() {
+    public String getProductCategory() {
         return productCategory;
     }
 
-    public void setProductCategory(int productCategory) {
+    public void setProductCategory(String productCategory) {
         this.productCategory = productCategory;
     }
 
-    public int getProductCost() {
+    public double getProductCost() {
         return productCost;
     }
 
-    public void setProductCost(int productCost) {
+    public void setProductCost(double productCost) {
         this.productCost = productCost;
     }
 
-    public int getProductPrice() {
+    public double getProductPrice() {
         return productPrice;
     }
 
-    public void setProductPrice(int productPrice) {
+    public void setProductPrice(double productPrice) {
         this.productPrice = productPrice;
     }
 
-    public int getProductQuantity() {
+    public double getProductQuantity() {
         return productQuantity;
     }
 
-    public void setProductQuantity(int productQuantity) {
+    public void setProductQuantity(double productQuantity) {
         this.productQuantity = productQuantity;
     }
 
-    public int getProductWeight() {
+    public double getProductWeight() {
         return productWeight;
     }
 
-    public void setProductWeight(int productWeight) {
+    public void setProductWeight(double productWeight) {
         this.productWeight = productWeight;
     }
 }
