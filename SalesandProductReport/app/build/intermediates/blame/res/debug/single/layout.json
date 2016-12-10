@@ -28,12 +28,12 @@
         "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\notification_template_part_time.xml"
     },
     {
-        "merged": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
-        "source": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\support_simple_spinner_dropdown_item.xml"
-    },
-    {
         "merged": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
         "source": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
     {
         "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
@@ -44,12 +44,12 @@
         "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\src\\main\\res\\layout\\activity_sales.xml"
     },
     {
-        "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_expenses.xml",
-        "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\src\\main\\res\\layout\\fragment_expenses.xml"
-    },
-    {
         "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
         "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_expenses.xml",
+        "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\src\\main\\res\\layout\\fragment_expenses.xml"
     },
     {
         "merged": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_products.xml",
@@ -60,20 +60,20 @@
         "source": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.4.0\\res\\layout\\design_layout_tab_text.xml"
     },
     {
-        "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
-        "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.4.0\\res\\layout\\design_navigation_item_header.xml"
-    },
-    {
         "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
         "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.4.0\\res\\layout\\design_navigation_item.xml"
     },
     {
-        "merged": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
-        "source": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.4.0\\res\\layout\\design_navigation_item_subheader.xml"
+        "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
+        "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.4.0\\res\\layout\\design_navigation_item_header.xml"
     },
     {
         "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
         "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
+        "source": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.4.0\\res\\layout\\design_navigation_item_subheader.xml"
     },
     {
         "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
