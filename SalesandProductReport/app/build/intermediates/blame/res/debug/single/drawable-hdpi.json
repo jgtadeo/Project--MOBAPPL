@@ -1,11 +1,19 @@
 [
     {
+        "merged": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_shopping_cart_black_24dp.png",
+        "source": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\src\\main\\res\\drawable-hdpi\\ic_shopping_cart_black_24dp.png"
+    },
+    {
         "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_monetization_on_black_24dp.png",
         "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\src\\main\\res\\drawable-hdpi\\ic_monetization_on_black_24dp.png"
     },
     {
         "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_mail_black_18dp.png",
         "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\src\\main\\res\\drawable-hdpi\\ic_mail_black_18dp.png"
+    },
+    {
+        "merged": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_date_range_black_18dp.png",
+        "source": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\src\\main\\res\\drawable-hdpi\\ic_date_range_black_18dp.png"
     },
     {
         "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_add_shopping_cart_black_18dp.png",
@@ -16,32 +24,80 @@
         "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\src\\main\\res\\drawable-hdpi\\ic_attach_money_black_24dp.png"
     },
     {
-        "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_sms_black_18dp.png",
-        "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\src\\main\\res\\drawable-hdpi\\ic_sms_black_18dp.png"
-    },
-    {
         "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_iso_black_18dp.png",
         "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\src\\main\\res\\drawable-hdpi\\ic_iso_black_18dp.png"
-    },
-    {
-        "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_money_off_black_24dp.png",
-        "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\src\\main\\res\\drawable-hdpi\\ic_money_off_black_24dp.png"
     },
     {
         "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_exposure_plus_1_black_24dp.png",
         "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\src\\main\\res\\drawable-hdpi\\ic_exposure_plus_1_black_24dp.png"
     },
     {
+        "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_money_off_black_24dp.png",
+        "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\src\\main\\res\\drawable-hdpi\\ic_money_off_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_monetization_on_black_24dp.png",
+        "source": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\src\\main\\res\\drawable-hdpi\\ic_monetization_on_black_24dp.png"
+    },
+    {
         "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_shopping_cart_black_24dp.png",
         "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\src\\main\\res\\drawable-hdpi\\ic_shopping_cart_black_24dp.png"
     },
     {
-        "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_account_circle_black_18dp.png",
-        "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\src\\main\\res\\drawable-hdpi\\ic_account_circle_black_18dp.png"
-    },
-    {
         "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_content_paste_black_18dp.png",
         "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\src\\main\\res\\drawable-hdpi\\ic_content_paste_black_18dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_face_black_18dp.png",
+        "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\src\\main\\res\\drawable-hdpi\\ic_face_black_18dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_trending_up_black_24dp.png",
+        "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\src\\main\\res\\drawable-hdpi\\ic_trending_up_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_face_black_18dp.png",
+        "source": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\src\\main\\res\\drawable-hdpi\\ic_face_black_18dp.png"
+    },
+    {
+        "merged": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_add_shopping_cart_black_18dp.png",
+        "source": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\src\\main\\res\\drawable-hdpi\\ic_add_shopping_cart_black_18dp.png"
+    },
+    {
+        "merged": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_mail_black_18dp.png",
+        "source": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\src\\main\\res\\drawable-hdpi\\ic_mail_black_18dp.png"
+    },
+    {
+        "merged": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_content_paste_black_18dp.png",
+        "source": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\src\\main\\res\\drawable-hdpi\\ic_content_paste_black_18dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_sms_black_18dp.png",
+        "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\src\\main\\res\\drawable-hdpi\\ic_sms_black_18dp.png"
+    },
+    {
+        "merged": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_account_circle_black_18dp.png",
+        "source": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\src\\main\\res\\drawable-hdpi\\ic_account_circle_black_18dp.png"
+    },
+    {
+        "merged": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_money_off_black_24dp.png",
+        "source": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\src\\main\\res\\drawable-hdpi\\ic_money_off_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_iso_black_18dp.png",
+        "source": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\src\\main\\res\\drawable-hdpi\\ic_iso_black_18dp.png"
+    },
+    {
+        "merged": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_tap_and_play_black_18dp.png",
+        "source": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\src\\main\\res\\drawable-hdpi\\ic_tap_and_play_black_18dp.png"
+    },
+    {
+        "merged": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_sms_black_18dp.png",
+        "source": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\src\\main\\res\\drawable-hdpi\\ic_sms_black_18dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_account_circle_black_18dp.png",
+        "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\src\\main\\res\\drawable-hdpi\\ic_account_circle_black_18dp.png"
     },
     {
         "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_date_range_black_18dp.png",
@@ -52,11 +108,15 @@
         "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\src\\main\\res\\drawable-hdpi\\ic_tap_and_play_black_18dp.png"
     },
     {
-        "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_face_black_18dp.png",
-        "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\src\\main\\res\\drawable-hdpi\\ic_face_black_18dp.png"
+        "merged": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_trending_up_black_24dp.png",
+        "source": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\src\\main\\res\\drawable-hdpi\\ic_trending_up_black_24dp.png"
     },
     {
-        "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_trending_up_black_24dp.png",
-        "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\src\\main\\res\\drawable-hdpi\\ic_trending_up_black_24dp.png"
+        "merged": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_attach_money_black_24dp.png",
+        "source": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\src\\main\\res\\drawable-hdpi\\ic_attach_money_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_exposure_plus_1_black_24dp.png",
+        "source": "C:\\Users\\johan\\Desktop\\Project--MOBAPPL\\SalesandProductReport\\app\\src\\main\\res\\drawable-hdpi\\ic_exposure_plus_1_black_24dp.png"
     }
 ]

@@ -12,64 +12,68 @@
     tools:context="ph.edu.apc.renzo.salesandproductreport.Activities.LoginActivity"
     android:background="@color/colorAccent">
 
+    <!--  HEADER-->
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
-        android:layout_centerHorizontal="true" >
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="ELOUS STORE"
             android:textSize="30sp"
             android:textColor="@color/colorWhite"
             android:textStyle="bold"
-            android:layout_marginLeft="75dp"
-            android:layout_marginTop="10dp" />
+            android:gravity="center" />
     </LinearLayout>
 
+    <!-- SECOND HEADER -->
     <View
-        android:layout_width="250dp"
+        android:layout_width="fill_parent"
         android:layout_height="1dp"
         android:background="@color/colorLine"
         android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="100dp"
-        android:layout_marginLeft="20dp" >
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/view2">
     </View>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/linearLayout">
+        android:id="@+id/linearLayout"
+        android:layout_alignBottom="@+id/view"
+        android:layout_marginBottom="13dp">
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Login"
             android:textSize="20sp"
             android:textColor="@color/colorWhite"
-            android:layout_marginLeft="145dp"
-            android:layout_marginTop="115dp"
+            android:gravity="center"
             android:id="@+id/text123"/>
     </LinearLayout>
 
     <View
-        android:layout_width="250dp"
+        android:layout_width="fill_parent"
         android:layout_height="1dp"
         android:background="@color/colorLine"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="150dp">
+        android:id="@+id/view">
     </View>
 
+    <!-- EMAIL -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -77,13 +81,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="160dp"
+            android:layout_marginTop="180dp"
             android:orientation="horizontal"
             android:weightSum="1">
             <ImageView
                 android:id="@+id/imageView_Face"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
                 app:srcCompat="@drawable/ic_face_black_18dp"
                 android:layout_marginTop="39dp"
                 android:layout_marginLeft="30dp"/>
@@ -94,7 +98,7 @@
                 android:layout_weight=".85"
                 android:layout_marginTop="35dp"
                 android:layout_marginLeft="10dp"
-                android:inputType="text"
+                android:inputType="textEmailAddress"
                 android:maxLines="1"
                 android:hint="Email"
                 android:background="@drawable/rounded_edittext"
@@ -103,20 +107,24 @@
         </LinearLayout>
     </LinearLayout>
 
+    <!-- PASSWORD -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="230dp"
+            android:layout_marginTop="250dp"
             android:orientation="horizontal"
             android:weightSum="1">
             <ImageView
                 android:id="@+id/imageView_Lock"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
                 app:srcCompat="@android:drawable/ic_secure"
                 android:layout_marginTop="38dp"
                 android:layout_marginLeft="30dp" />
@@ -136,31 +144,46 @@
         </LinearLayout>
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView_LoginForgotPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="false"
-        android:layout_marginBottom="185dp"
-        android:layout_marginLeft="200dp"
-        android:text="Forgot password?"
-        android:textColor="@color/colorWhite"
-        android:textColorLink="#0097A9"
-        android:onClick="click"
-        android:linksClickable="true" />
+    <!-- FORGOT PASSWORD -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="340dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:id="@+id/textView_LoginForgotPassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Forgot password?"
+                android:textColor="@color/colorWhite"
+                android:textColorLink="#0097A9"
+                android:onClick="click"
+                android:linksClickable="true"
+                android:textSize="14dp"
+                android:layout_marginRight="38dp"/>
 
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!-- LOGIN BUTTON -->
     <Button
-    android:id="@+id/button_Login"
-    android:layout_width="140dp"
-    android:layout_height="40dp"
-    android:layout_alignParentBottom="true"
-    android:layout_centerHorizontal="true"
-    android:layout_marginBottom="70dp"
-    android:text="Login"
-    android:textSize="16sp"
-    android:textColor="#0097A9"
-    android:background="@drawable/rounded_button" />
+        android:id="@+id/button_Login"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:text="Login"
+        android:textSize="16sp"
+        android:textColor="#0097A9"
+        android:background="@drawable/rounded_button" />
 
     <TextView
         android:id="@+id/textView_LoginSignup"
@@ -182,5 +205,7 @@
         android:layout_gravity="center|bottom"
         android:layout_marginBottom="20dp"
         android:visibility="gone" />
+
+
 
 </RelativeLayout>
