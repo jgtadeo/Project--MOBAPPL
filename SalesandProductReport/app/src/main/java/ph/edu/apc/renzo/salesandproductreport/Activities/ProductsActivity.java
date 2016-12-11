@@ -69,7 +69,7 @@ public class ProductsActivity extends AppCompatActivity implements View.OnClickL
         mUser = mAuth.getCurrentUser();
         mUid = mUser.getUid();
 
-        database = FirebaseDatabase.getInstance().getReference();
+        database = FirebaseDatabase.getInstance().getReference().child("users").child(mUid).child("products");
     }
 
     @Override
@@ -138,8 +138,8 @@ public class ProductsActivity extends AppCompatActivity implements View.OnClickL
             }
         }
 
-    private void addProduct(String Date, String ProductName, String Category, Double Cost, Double Price, Double Quantity, Double Weight) {
-        String dateStamp = DateFormat.getDateInstance().format(new Date());
+    private void addProduct(String Date, String ProductName, String Category, Double Cost,
+                            Double Price, Double Quantity, Double Weight) {
 
         Log.d("debug", "Date:" + Date);
         Log.d("debug", "Product name:" + ProductName);
@@ -149,13 +149,23 @@ public class ProductsActivity extends AppCompatActivity implements View.OnClickL
         Log.d("debug", "Quantity:" + Quantity);
         Log.d("debug", "Weight:" + Weight);
 
-        database.child("users").child(mUid).child(dateStamp).child("products").push().setValue("date: " + Date);
+        DatabaseReference mData = database.push();
+
+        mData.child("expiration_date").setValue(Date);
+        mData.child("product_name").setValue(ProductName);
+        mData.child("category").setValue(Category);
+        mData.child("cost").setValue(Cost);
+        mData.child("price").setValue(Price);
+        mData.child("quantity").setValue(Quantity);
+        mData.child("weight").setValue(Weight);
+
+        /*database.child("users").child(mUid).child(dateStamp).child("products").push().setValue("date: " + Date);
         database.child("users").child(mUid).child(dateStamp).child("products").push().setValue("product name: " + ProductName);
         database.child("users").child(mUid).child(dateStamp).child("products").push().setValue("category: " + Category);
         database.child("users").child(mUid).child(dateStamp).child("products").push().setValue("cost: " + Cost);
         database.child("users").child(mUid).child(dateStamp).child("products").push().setValue("Price: " + Price);
         database.child("users").child(mUid).child(dateStamp).child("products").push().setValue("quantity: " + Quantity);
-        database.child("users").child(mUid).child(dateStamp).child("products").push().setValue("weight: " + Weight);
+        database.child("users").child(mUid).child(dateStamp).child("products").push().setValue("weight: " + Weight);*/
 
         Toast.makeText(this, "All information has been saved!", Toast.LENGTH_LONG).show();
 

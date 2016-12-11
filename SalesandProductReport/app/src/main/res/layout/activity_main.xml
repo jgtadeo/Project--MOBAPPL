@@ -13,69 +13,70 @@
     android:background="@color/colorAccent">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp">
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true" >
         <TextView
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="ELOUS STORE"
             android:textSize="30sp"
             android:textColor="@color/colorWhite"
             android:textStyle="bold"
-            android:gravity="center" />
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="10dp" />
     </LinearLayout>
 
     <View
-        android:layout_width="fill_parent"
+        android:layout_width="250dp"
         android:layout_height="1dp"
         android:background="@color/colorLine"
         android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="120dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:id="@+id/view2"/>
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp" >
+    </View>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/linearLayout"
-        android:layout_alignBottom="@+id/view"
-        android:layout_marginBottom="12dp">
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout">
         <TextView
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Welcome!"
             android:textSize="20sp"
             android:textColor="@color/colorWhite"
-            android:gravity="center"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="115dp"
             android:id="@+id/text123"/>
     </LinearLayout>
 
     <View
-        android:layout_width="fill_parent"
+        android:layout_width="250dp"
         android:layout_height="1dp"
         android:background="@color/colorLine"
-        android:layout_marginTop="170dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
         android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
-        android:id="@+id/view"/>
+        android:layout_marginTop="150dp">
+    </View>
 
     <Button
         android:id="@+id/button_MainSales"
-        android:layout_width="180dp"
-        android:layout_height="44dp"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="309dp"
+        android:layout_marginBottom="315dp"
         android:text="Sales"
         android:paddingRight="15dp"
         android:paddingLeft="15dp"
@@ -86,11 +87,11 @@
 
     <Button
         android:id="@+id/button_MainProducts"
-        android:layout_width="180dp"
-        android:layout_height="44dp"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="250dp"
+        android:layout_marginBottom="255dp"
         android:text="Products"
         android:paddingRight="15dp"
         android:paddingLeft="15dp"
@@ -101,11 +102,11 @@
 
     <Button
         android:id="@+id/button_MainGraph"
-        android:layout_width="180dp"
-        android:layout_height="44dp"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="190dp"
+        android:layout_marginBottom="195dp"
         android:paddingRight="15dp"
         android:paddingLeft="15dp"
         android:text="Graph"
@@ -116,11 +117,11 @@
 
     <Button
         android:id="@+id/button_MainExpenses"
-        android:layout_width="180dp"
-        android:layout_height="44dp"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="130dp"
+        android:layout_marginBottom="135dp"
         android:paddingRight="15dp"
         android:paddingLeft="15dp"
         android:text="Expenses"
@@ -131,11 +132,11 @@
 
     <Button
         android:id="@+id/button_MainRecords"
-        android:layout_width="180dp"
-        android:layout_height="44dp"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="70dp"
+        android:layout_marginBottom="75dp"
         android:paddingRight="15dp"
         android:paddingLeft="15dp"
         android:text="Records"
@@ -145,13 +146,11 @@
         android:drawableLeft="@drawable/ic_money_off_black_24dp" />
 
     <View
-        android:layout_width="fill_parent"
+        android:layout_width="250dp"
         android:layout_height="1dp"
         android:background="@color/colorLine"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
         android:layout_marginBottom="50dp">
     </View>
 

@@ -67,7 +67,7 @@ public class SalesActivity extends AppCompatActivity implements View.OnClickList
         mUser = mAuth.getCurrentUser();
         mUid = mUser.getUid();
 
-        database = FirebaseDatabase.getInstance().getReference();
+        database = FirebaseDatabase.getInstance().getReference().child("users").child(mUid).child("sales");
 
     }
 
@@ -146,8 +146,6 @@ public class SalesActivity extends AppCompatActivity implements View.OnClickList
 
         double computeGross, computeEload;
 
-        String dateStamp = DateFormat.getDateInstance().format(new Date());
-
         Log.d("debug", "Date:" + Date);
         Log.d("debug", "Gross:" + Gross);
         Log.d("debug", "Bread:" + Bread);
@@ -163,7 +161,20 @@ public class SalesActivity extends AppCompatActivity implements View.OnClickList
         computeEload = Smart + Globe + Sun;
         Log.d("debug", "Computed Eload:" + computeEload);
 
-        database.child("users").child(mUid).child(dateStamp).child("sales").push().setValue("date: " + Date );
+        DatabaseReference mData = database.push();
+
+        mData.child("date").setValue(Date);
+        mData.child("gross").setValue(Gross);
+        mData.child("computed gross").setValue(computeGross);
+        mData.child("grocery").setValue(Grocery);
+        mData.child("bread").setValue(Bread);
+        mData.child("eload").setValue(Eload);
+        mData.child("computed eload").setValue(computeEload);
+        mData.child("smart").setValue(Smart);
+        mData.child("globe").setValue(Globe);
+        mData.child("sun").setValue(Sun);
+
+       /* database.child("users").child(mUid).child(dateStamp).child("sales").push().setValue("date: " + Date );
         database.child("users").child(mUid).child(dateStamp).child("sales").push().setValue("gross: " + Gross);
         database.child("users").child(mUid).child(dateStamp).child("sales").push().setValue("computed_gross: " + computeGross);
         database.child("users").child(mUid).child(dateStamp).child("sales").push().setValue("grocery: " + Grocery);
@@ -172,7 +183,7 @@ public class SalesActivity extends AppCompatActivity implements View.OnClickList
         database.child("users").child(mUid).child(dateStamp).child("sales").push().setValue("computed_eload: " + computeEload);
         database.child("users").child(mUid).child(dateStamp).child("sales").push().setValue("smart: " + Smart);
         database.child("users").child(mUid).child(dateStamp).child("sales").push().setValue("globe: " + Globe);
-        database.child("users").child(mUid).child(dateStamp).child("sales").push().setValue("sun: " + Sun);
+        database.child("users").child(mUid).child(dateStamp).child("sales").push().setValue("sun: " + Sun);*/
 
         Toast.makeText(this, "All information has been saved!", Toast.LENGTH_LONG).show();
 

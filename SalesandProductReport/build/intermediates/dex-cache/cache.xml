@@ -3,165 +3,363 @@
 
     <item
         is-multidex="false"
-        jar="C:\Users\johan\Desktop\Project--MOBAPPL\SalesandProductReport\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\libs\internal_impl-24.0.0.jar"
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.3"
-        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
-        <dex dex="C:\Users\johan\Desktop\Project--MOBAPPL\SalesandProductReport\app\build\intermediates\pre-dexed\debug\internal_impl-24.0.0_1ddbb7e699da08363d21c9b55b89a3a2b936aea1.jar" />
+        revision="25.0.0"
+        sha1="ea4b54dcbfe5ac05efb0a314105f07258118d3a7">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-iid-9.0.0_e71d740f7332a92e85b069cf0d9e17582cc0445f.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\johan\Desktop\Project--MOBAPPL\SalesandProductReport\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.3"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="C:\Users\johan\Desktop\Project--MOBAPPL\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_9882002a38aa82f36ece2ef794c12a76abf5fae1.jar" />
+        revision="25.0.0"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.0.1_97f3fa064e3f0560807ad1d6a43813635db77c6a.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\johan\Desktop\Project--MOBAPPL\SalesandProductReport\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.0.1\jars\classes.jar"
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\9.4.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.3"
-        sha1="433f4d6aa5f21f19552afe0e6c5eff0fedba73ad">
-        <dex dex="C:\Users\johan\Desktop\Project--MOBAPPL\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-10.0.1_545ce764b3fc4df43897cf9f44bc173dae0b79c3.jar" />
+        revision="25.0.0"
+        sha1="0e4d53465cc141bec58f18a894e4c4e80633fa32">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-database-connection-9.4.0_d9c65fdec6423aa0a7dff60c8a98d72befaaa2ac.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\johan\Desktop\Project--MOBAPPL\SalesandProductReport\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\10.0.1\jars\classes.jar"
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.3"
-        sha1="8f128aeeb7e31271b28a7adb9dac1f3a6ed9f5e7">
-        <dex dex="C:\Users\johan\Desktop\Project--MOBAPPL\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-database-10.0.1_183f6bc46cc79610169ae5a9318c57fdda230e99.jar" />
+        revision="25.0.0"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.0.1_63d25276301d23e64988845449d21a02d35d5ef5.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\johan\Desktop\Project--MOBAPPL\SalesandProductReport\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.3"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="C:\Users\johan\Desktop\Project--MOBAPPL\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_13a3b119babc90d60c8e6b23514f57dd7404f428.jar" />
+        revision="25.0.0"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.0.1_fb3045809ab16bde03d7bdf06861818448e0451f.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\johan\Desktop\Project--MOBAPPL\SalesandProductReport\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\classes.jar"
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.11.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.3"
-        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
-        <dex dex="C:\Users\johan\Desktop\Project--MOBAPPL\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.0.0_4ac506196c241e3641f4d61ae76977677b022d02.jar" />
+        revision="25.0.0"
+        sha1="86da97c30f50a67ddabe2cf7040713ad17153fce">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.facebook.android-facebook-android-sdk-4.11.0_10a69a38f7179e3b1d83b316388c61a77f1525f6.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\johan\Desktop\Project--MOBAPPL\SalesandProductReport\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.4.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.3"
-        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
-        <dex dex="C:\Users\johan\Desktop\Project--MOBAPPL\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.4.0_464ebc9a32c8f0ba9741fcab6c9cf41cfb948d74.jar" />
+        revision="25.0.0"
+        sha1="3dee4ce5844d39d843d503fb8fe04e51e5bfffac">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-9.4.0_ad07caa5b48d61dda0ddfe34214b5ef909340c5e.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\johan\Desktop\Project--MOBAPPL\SalesandProductReport\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.0.1\jars\classes.jar"
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.android.support\transition\25.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.3"
-        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
-        <dex dex="C:\Users\johan\Desktop\Project--MOBAPPL\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-10.0.1_269de64a6d24176af41d20b4ea690d5ba3eae8bc.jar" />
+        revision="25.0.0"
+        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.android.support-transition-25.0.1_3a4c7d88c0eac578fee9f9da218132c9d79ca1fb.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\johan\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.0.0\support-annotations-24.0.0.jar"
+        jar="C:\Users\Renzo\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.3"
-        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
-        <dex dex="C:\Users\johan\Desktop\Project--MOBAPPL\SalesandProductReport\app\build\intermediates\pre-dexed\debug\support-annotations-24.0.0_5635bf91cf42da1d021911755cf3f995977dc8b5.jar" />
+        revision="25.0.0"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0_7f313fb40bd8407770f65f69d50d1af27308e9cb.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\johan\Desktop\Project--MOBAPPL\SalesandProductReport\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\jars\classes.jar"
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.3"
-        sha1="486371f97baad8e607f332f20fee1d3dd00a731a">
-        <dex dex="C:\Users\johan\Desktop\Project--MOBAPPL\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-iid-10.0.1_3669b8e77e330193e85464094e3f0b31ef037445.jar" />
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.0.1_10ef650b22699d58c489d312d6b5a5ead3e9b59d.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\johan\Desktop\Project--MOBAPPL\SalesandProductReport\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\10.0.1\jars\classes.jar"
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.1\jars\libs\internal_impl-25.0.1.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.3"
-        sha1="8010ae6ed32828a145b25ec97bc07b7a83c6318f">
-        <dex dex="C:\Users\johan\Desktop\Project--MOBAPPL\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-database-connection-10.0.1_2e1400131d19f338af22fe9404980dfef521fd94.jar" />
+        revision="25.0.0"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_b4a6b33de9b8dc90bbd35508447fe92e05c442f2.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\johan\Desktop\Project--MOBAPPL\SalesandProductReport\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.android.support\design\25.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.3"
-        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="C:\Users\johan\Desktop\Project--MOBAPPL\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.4.0_adce05e107e24efc8a7ae36c82ea483deec166ba.jar" />
+        revision="25.0.0"
+        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.android.support-design-25.0.1_aa6b07fb9a9b13d79fed9bd59363926201444b5d.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\johan\Desktop\Project--MOBAPPL\SalesandProductReport\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\10.0.1\jars\classes.jar"
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth-base\9.4.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.3"
-        sha1="9cca2818594cc5348806d6662133491e7ea0fa8d">
-        <dex dex="C:\Users\johan\Desktop\Project--MOBAPPL\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-auth-10.0.1_b2564e89ad0564ed1c92dea968c93e3eb7c1c968.jar" />
+        revision="25.0.0"
+        sha1="58c9f5ee817fdb8b658fd7455fadfb74119f7ee9">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-auth-base-9.4.0_e73201f5f69b0a8d8e26e65da6094c6de2d680f0.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\johan\Desktop\Project--MOBAPPL\SalesandProductReport\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.0.1\jars\classes.jar"
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.3"
-        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
-        <dex dex="C:\Users\johan\Desktop\Project--MOBAPPL\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-10.0.1_a562535dc308806bc9bd7bf0ff4098c081db1606.jar" />
+        revision="25.0.0"
+        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-25.0.1_478d9e9f17a992d243062b40d94731a612b79fa3.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\johan\Desktop\Project--MOBAPPL\SalesandProductReport\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\10.0.1\jars\classes.jar"
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.3"
-        sha1="6116e0e7069de7fc259aac8e08b84f32c2038231">
-        <dex dex="C:\Users\johan\Desktop\Project--MOBAPPL\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-impl-10.0.1_abd883f201f5845706e972b6b1c526c055464a5e.jar" />
+        revision="25.0.0"
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.0.1_ee371bf916dfbd85beb8692482d4d25759e9334b.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\johan\Desktop\Project--MOBAPPL\SalesandProductReport\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.0.1\jars\classes.jar"
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.3"
-        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
-        <dex dex="C:\Users\johan\Desktop\Project--MOBAPPL\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-10.0.1_99d60acc35d82e0ab981eaec7b1eb069854875e0.jar" />
+        revision="25.0.0"
+        sha1="1108575c7dc7b7f5b378b3290ac90de81a9b8830">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-25.0.1_d7bde03186d7b767facc660cc6740ffff9ea5f85.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\johan\Desktop\Project--MOBAPPL\SalesandProductReport\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\10.0.1\jars\classes.jar"
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.0.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.3"
-        sha1="eb0d830e3eabb9deb9ec44869cf7ac7ea1ad794c">
-        <dex dex="C:\Users\johan\Desktop\Project--MOBAPPL\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-common-10.0.1_aa2136fb4192fdb6a6fa1e5c77e719f7ce1f5554.jar" />
+        revision="25.0.0"
+        sha1="0dc8ab07eeceda5e99b305c8069765056b6e5c9d">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-impl-9.0.0_c2bbab1a211d7928998685805378838e7b95625f.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\johan\Desktop\Project--MOBAPPL\SalesandProductReport\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.3"
-        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
-        <dex dex="C:\Users\johan\Desktop\Project--MOBAPPL\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.4.0_e4da966c23ccb9ef4c610c4b6a89fb09efd5f45b.jar" />
+        revision="25.0.0"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_c02634f4ce50a9e82601e72c07f90edf8b5aeae0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="84bf369090a8f7e293817efbd6ccf31ada1be32b">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-database-9.4.0_cd6bc1f2226ace0fb42baa3749d68a108f361612.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.0.1_c49f6bbd4240deb3c4a8098c9dcc18ed5cfc23e8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.0.1_877f22ab2058c232206ff4673072e18bf48a0b36.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Renzo\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-applinks\1.4.0\8ad21bf21784dacce5f2043afb97218cc377e835\bolts-applinks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\bolts-applinks-1.4.0_dcb635526f0e547645d3634135a0275f325dd161.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="618485fef3ebe12127f7622abbc9b5b39057b5c2">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-9.4.0_a6350a07b25848e2ab716f0248528b94fc23f83a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_f1d4594ae4df572cfe73d7e4a300b390401e9dab.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4ef8ab5fee042023018249474bc93bd4b2b9c17e">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-9.0.0_cee5aa8bae6c726fb4390d02d8dd157f8bef013b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Renzo\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.1\support-annotations-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\support-annotations-25.0.1_27a8ba324f2f9952840d583e663e1a24e0582513.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-module\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6bc41d9d6fd12d2ef23c785a259011001f4a1a5b">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-auth-module-9.4.0_91fa747ef16ba1ceac86aef0646429cd5e3fa000.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.firebaseui\firebase-ui\0.4.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6410576864efb5ed0ec9f10c8e091909959ae27c">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.firebaseui-firebase-ui-0.4.4_4a802b9ba0e3e7d68332e27eee01a62081f7c059.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_4db1f83ac681de21280635e068965e4c9f9671fd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.0.1_bfba3c3adf9ad96d5216d9ca46babb6941b266d2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_a541a6e5afbba937aded1738198e7583d7c86ab2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4348dd26d83b56c2058b768222c3271bce911724">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-auth-9.4.0_5c5ab25f05658e7602434b0962a0524c9d09187d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.android.support\customtabs\23.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0e5a66a941515d873a34065fe44fbba6ef422a1b">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.android.support-customtabs-23.2.1_967f86609a9ab6a9dc227fa5a9349af5d80f7648.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.firebaseui\firebase-ui-database\0.4.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="acb0b23366d6d35b86d6564fcabf3a2ef439f9af">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.firebaseui-firebase-ui-database-0.4.4_3e3c446bb8a29c8303f974c61402ee0298c7036c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8a36d229011e75f0caef408e1adf0d3fd4d94e02">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-9.4.0_52a363b3e1decb6e6440267100ed7fdf36a64a04.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4b630471536351be7c3c3100735c75b7ad2cbd84">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-auth-9.4.0_45ffb425bead094cd400c6a616e468608e4aab6a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-common\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="34762013d39dbe6c656050589c44e8b61b9a2c5d">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-auth-common-9.4.0_6a7d73fa8900510d114fd6db1da489ee9bf17a1c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.0.1_22988eaa6493f421e798f02ddbe88c5d1e78178e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.firebaseui\firebase-ui-auth\0.4.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="37e245cd01989dcaca6a48699d0152f0997fb246">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.firebaseui-firebase-ui-auth-0.4.4_4396dfffbd57f594058092ce4f8b2664fc312de4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="18b5697c65c4fe5b7381613b8b8ae9ac52e26fa7">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-common-9.4.0_3cdb2a4c65143ca04e1b884bf76f10fd9696a22b.jar" />
     </item>
 
 </items>

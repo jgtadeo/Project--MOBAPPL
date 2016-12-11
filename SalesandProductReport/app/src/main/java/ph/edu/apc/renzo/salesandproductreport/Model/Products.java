@@ -6,72 +6,76 @@ package ph.edu.apc.renzo.salesandproductreport.Model;
 
 public class Products {
 
-    String productDate, productName, productCategory;
-    double productCost, productPrice, productQuantity, productWeight;
+    String expiration_date, product_name, category;
+    double cost, price, quantity, weight;
 
-    public Products(String productDate, String productName, String productCategory, double productCost, double productPrice, double productQuantity, double productWeight) {
-        this.productDate = productDate;
-        this.productName = productName;
-        this.productCategory = productCategory;
-        this.productCost = productCost;
-        this.productPrice = productPrice;
-        this.productQuantity = productQuantity;
-        this.productWeight = productWeight;
+    public Products() {
+
     }
 
-    public String getProductDate() {
-        return productDate;
+    public Products(String expiration_date, String product_name, String category, double cost, double price, double quantity, double weight) {
+        this.expiration_date = expiration_date;
+        this.product_name = product_name;
+        this.category = category;
+        this.cost = cost;
+        this.price = price;
+        this.quantity = quantity;
+        this.weight = weight;
     }
 
-    public void setProductDate(String productDate) {
-        this.productDate = productDate;
+    public String getExpiration_date() {
+        return expiration_date;
     }
 
-    public String getProductName() {
-        return productName;
+    public void setExpiration_date(String expiration_date) {
+        this.expiration_date = expiration_date;
     }
 
-    public void setProductName(String productName) {
-        this.productName = productName;
+    public String getProduct_name() {
+        return product_name;
     }
 
-    public String getProductCategory() {
-        return productCategory;
+    public void setProduct_name(String product_name) {
+        this.product_name = product_name;
     }
 
-    public void setProductCategory(String productCategory) {
-        this.productCategory = productCategory;
+    public String getCategory() {
+        return category;
     }
 
-    public double getProductCost() {
-        return productCost;
+    public void setCategory(String category) {
+        this.category = category;
     }
 
-    public void setProductCost(double productCost) {
-        this.productCost = productCost;
+    public double getCost() {
+        return cost;
     }
 
-    public double getProductPrice() {
-        return productPrice;
+    public void setCost(double cost) {
+        this.cost = cost;
     }
 
-    public void setProductPrice(double productPrice) {
-        this.productPrice = productPrice;
+    public double getPrice() {
+        return price;
     }
 
-    public double getProductQuantity() {
-        return productQuantity;
+    public void setPrice(double price) {
+        this.price = price;
     }
 
-    public void setProductQuantity(double productQuantity) {
-        this.productQuantity = productQuantity;
+    public double getQuantity() {
+        return quantity;
     }
 
-    public double getProductWeight() {
-        return productWeight;
+    public void setQuantity(double quantity) {
+        this.quantity = quantity;
     }
 
-    public void setProductWeight(double productWeight) {
-        this.productWeight = productWeight;
+    public double getWeight() {
+        return weight;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
     }
 }
