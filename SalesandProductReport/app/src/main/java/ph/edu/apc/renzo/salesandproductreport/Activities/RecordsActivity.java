@@ -110,4 +110,11 @@ public class RecordsActivity extends AppCompatActivity {
             return sepFragmentTitleList.get(position);
         }
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent back = new Intent(RecordsActivity.this, MainActivity.class);
+        startActivity(back);
+        finish();
+    }
 }

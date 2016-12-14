@@ -7,9 +7,14 @@ package ph.edu.apc.renzo.salesandproductreport.Model;
 public class Sales {
 
     String date;
-    double gross, bread, grocery, eload, smart, globe, sun;
+    double gross, bread, grocery, eload, smart, globe, sun, computed_gross, computed_eload;
 
-    public Sales(String date, double gross, double grocery, double bread, double eload, double smart, double globe, double sun) {
+    public Sales() {
+
+    }
+
+    public Sales(String date, double gross, double grocery, double bread, double eload,
+                 double smart, double globe, double sun, double computed_gross, double computed_eload) {
         this.date = date;
         this.gross = gross;
         this.grocery = grocery;
@@ -18,6 +23,8 @@ public class Sales {
         this.smart = smart;
         this.globe = globe;
         this.sun = sun;
+        this.computed_gross = computed_gross;
+        this.computed_eload = computed_eload;
     }
 
     public String getDate() {
@@ -82,5 +89,13 @@ public class Sales {
 
     public void setSun(double sun) {
         this.sun = sun;
+    }
+
+    public double getComputed_gross() {
+        return computed_gross;
+    }
+
+    public double getComputed_eload() {
+        return computed_eload;
     }
 }

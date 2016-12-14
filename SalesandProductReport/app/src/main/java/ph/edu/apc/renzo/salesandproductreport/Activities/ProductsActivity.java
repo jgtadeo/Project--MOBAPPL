@@ -69,7 +69,7 @@ public class ProductsActivity extends AppCompatActivity implements View.OnClickL
         mUser = mAuth.getCurrentUser();
         mUid = mUser.getUid();
 
-        database = FirebaseDatabase.getInstance().getReference().child("users").child(mUid).child("products");
+        database = FirebaseDatabase.getInstance().getReference().child("users").child("products");
     }
 
     @Override

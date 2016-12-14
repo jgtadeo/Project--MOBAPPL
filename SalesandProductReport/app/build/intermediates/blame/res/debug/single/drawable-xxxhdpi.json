@@ -28,12 +28,12 @@
         "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_add_shopping_cart_black_18dp.png"
     },
     {
-        "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\ic_content_paste_black_18dp.png",
-        "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_content_paste_black_18dp.png"
-    },
-    {
         "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\ic_money_off_black_24dp.png",
         "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_money_off_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\ic_content_paste_black_18dp.png",
+        "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_content_paste_black_18dp.png"
     },
     {
         "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi\\ic_shopping_cart_black_24dp.png",

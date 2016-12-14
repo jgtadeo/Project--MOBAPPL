@@ -111,6 +111,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.jjoe64\graphview\4.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="987adec819c9a98faf215814f41195da48fc724e">
+        <dex dex="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\pre-dexed\debug\com.jjoe64-graphview-4.2.1_8b680b67d424fe00f4bb8d3823263abcc261d316.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\Renzo\Desktop\Subjects\Mobappl\ProjectMobileApp\SalesandProductReport\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth-base\9.4.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"

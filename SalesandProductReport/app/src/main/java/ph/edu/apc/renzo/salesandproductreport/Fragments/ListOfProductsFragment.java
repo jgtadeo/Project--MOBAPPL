@@ -30,9 +30,12 @@ public class ListOfProductsFragment extends Fragment {
 
     private FirebaseAuth mAuth;
     private FirebaseUser mUser;
-    private String mUid;
-    private RecyclerView pAdapter;
     private FirebaseRecyclerAdapter<Products, ProductsViewHolder> firebaseRecyclerAdapter;
+
+    private String mUid;
+
+    private RecyclerView pAdapter;
+
     private LinearLayoutManager LLM;
 
     public ListOfProductsFragment() {
@@ -50,20 +53,18 @@ public class ListOfProductsFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
         final View view = inflater.inflate(R.layout.fragment_listofproducts, container, false);
 
-        mAuth = FirebaseAuth.getInstance();
+        /*mAuth = FirebaseAuth.getInstance();
         mUser = mAuth.getCurrentUser();
-        mUid = mUser.getUid();
+        mUid = mUser.getUid();*/
 
-        database = FirebaseDatabase.getInstance().getReference().child("users").child(mUid).child("products");
+        database = FirebaseDatabase.getInstance().getReference().child("users").child("products");
 
-        pAdapter = (RecyclerView) view.findViewById(R.id.recyclerView);
+        pAdapter = (RecyclerView) view.findViewById(R.id.recyclerViewP);
         pAdapter.setHasFixedSize(true);
 
         LLM = new LinearLayoutManager(getContext());
         LLM.setReverseLayout(true);
         LLM.setStackFromEnd(true);
-
-
 
         firebaseRecyclerAdapter = new FirebaseRecyclerAdapter<Products, ProductsViewHolder>(
                 Products.class,
@@ -80,71 +81,15 @@ public class ListOfProductsFragment extends Fragment {
                 viewHolder.setQuantity(model.getQuantity());
                 viewHolder.setWeight(model.getWeight());
             }
-
-
-                /*TextView productDate = (TextView) view.findViewById(R.id.textView_ProductDate);
-                TextView productName = (TextView) view.findViewById(R.id.textView_ProductName);
-                TextView productCategory = (TextView) view.findViewById(R.id.textView_ProductCategory);
-                TextView productPrice = (TextView) view.findViewById(R.id.textView_ProductPrice);
-                TextView productCost = (TextView) view.findViewById(R.id.textView_ProductCost);
-                TextView productQuantity = (TextView) view.findViewById(R.id.textView_ProductQuantity);
-                TextView productWeight = (TextView) view.findViewById(R.id.textView_ProductWeight);*/
-
-                /*viewHolder.setDate(model.getProductDate());
-                viewHolder.setName(model.getProductName());
-                viewHolder.setCategory(model.getProductCategory());
-                viewHolder.setPrice(model.getProductPrice());
-                viewHolder.setCost(model.getProductCost());
-                viewHolder.setQuantity(model.getProductQuantity());
-                viewHolder.setWeight(model.getProductWeight());*/
-
-                /*productDate.setText(model.getProductDate());
-                productName.setText(model.getProductName());
-                productCategory.setText(model.getProductCategory());
-                productPrice.setText((int) model.getProductPrice());
-                productCost.setText((int) model.getProductCost());
-                productQuantity.setText((int) model.getProductQuantity());
-                productWeight.setText((int) model.getProductWeight());*/
-
-            };
+        };
 
         pAdapter.setLayoutManager(LLM);
         pAdapter.setAdapter(firebaseRecyclerAdapter);
 
         return view;
-        }
+    }
 
-        /*firebaseRecyclerAdapter.registerAdapterDataObserver(new RecyclerView.AdapterDataObserver() {
-            @Override
-            public void onItemRangeInserted(int positionStart, int itemCount) {
-                super.onItemRangeInserted(positionStart, itemCount);
-
-                int productCount = firebaseRecyclerAdapter.getItemCount();
-                int visiblePosition = linearManager.findLastCompletelyVisibleItemPosition();
-
-                if (visiblePosition == -1 || (positionStart >= (productCount - 1) && visiblePosition == (positionStart - 1))) {
-                    pAdapter.scrollToPosition(positionStart);
-                }
-            }
-        });
-
-        pAdapter.setAdapter(firebaseRecyclerAdapter);
-        pAdapter.setLayoutManager(linearManager);*/
-
-        //displayProductList();
-
-       /* FirebaseRecyclerAdapter<Products, ProductsHolder> Precycleradapter = new FirebaseRecyclerAdapter
-                <Products, ProductsHolder>(Products.class, R.layout.product_row_layout, ProductsHolder.class,
-                database.child("users").child(mUid).child(dateStamp).child("products").getRef()) {
-            @Override
-            protected void populateViewHolder(ProductsHolder viewHolder, Products model, int position) {
-                viewHolder.productDate.setText(model.getProductD ate());
-                viewHolder.productName.setText(model.getProductName());
-                viewHolder.productCategory.setText(model.getProductCategory());
-            }
-        };*/
-
-    public static class ProductsViewHolder extends RecyclerView.ViewHolder {
+    private static class ProductsViewHolder extends RecyclerView.ViewHolder {
 
         View mView;
 
@@ -155,12 +100,12 @@ public class ListOfProductsFragment extends Fragment {
 
         public void setExpiration_date(String expiration_date) {
             TextView post_expiration_date = (TextView) mView.findViewById(R.id.textView_ProductDate);
-            post_expiration_date.setText(expiration_date);
+            post_expiration_date.setText("Expiration Date: " + expiration_date);
         }
 
         public void setProduct_name(String product_name) {
             TextView post_product_name = (TextView) mView.findViewById(R.id.textView_ProductName);
-            post_product_name.setText(product_name);
+            post_product_name.setText("Product Name: " + product_name);
         }
 
         public void setCategory(String category) {

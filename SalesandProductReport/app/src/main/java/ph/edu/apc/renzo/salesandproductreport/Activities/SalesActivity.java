@@ -67,7 +67,7 @@ public class SalesActivity extends AppCompatActivity implements View.OnClickList
         mUser = mAuth.getCurrentUser();
         mUid = mUser.getUid();
 
-        database = FirebaseDatabase.getInstance().getReference().child("users").child(mUid).child("sales");
+        database = FirebaseDatabase.getInstance().getReference().child("users").child("sales");
 
     }
 
@@ -165,11 +165,11 @@ public class SalesActivity extends AppCompatActivity implements View.OnClickList
 
         mData.child("date").setValue(Date);
         mData.child("gross").setValue(Gross);
-        mData.child("computed gross").setValue(computeGross);
+        mData.child("computed_gross").setValue(computeGross);
         mData.child("grocery").setValue(Grocery);
         mData.child("bread").setValue(Bread);
         mData.child("eload").setValue(Eload);
-        mData.child("computed eload").setValue(computeEload);
+        mData.child("computed_eload").setValue(computeEload);
         mData.child("smart").setValue(Smart);
         mData.child("globe").setValue(Globe);
         mData.child("sun").setValue(Sun);

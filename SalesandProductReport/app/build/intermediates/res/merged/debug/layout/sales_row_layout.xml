@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="5dp"
+    android:layout_margin="5dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorTab" >
+
+        <TextView
+            android:id="@+id/textView_SaleDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textSize="14dp"
+            android:background="@color/colorLine"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/textView_SaleGross"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gross"
+            android:gravity="center_vertical"
+            android:textSize="10dp"
+            android:layout_below="@id/textView_SaleDate"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/textView_SaleGrocery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grocery"
+            android:gravity="center_vertical"
+            android:textSize="10dp"
+            android:layout_below="@id/textView_SaleGross"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/textView_SaleBread"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bread"
+            android:gravity="center_vertical"
+            android:textSize="10dp"
+            android:layout_below="@id/textView_SaleGrocery"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:id="@+id/textView_SaleComputedGross"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Computed Gross"
+            android:gravity="center_vertical"
+            android:textSize="10dp"
+            android:layout_below="@id/textView_SaleBread"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:id="@+id/textView_SaleEload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eload"
+            android:gravity="center_vertical"
+            android:textSize="10dp"
+            android:layout_below="@id/textView_SaleComputedGross"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:id="@+id/textView_SaleSmart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Smart"
+            android:gravity="center_vertical"
+            android:textSize="10dp"
+            android:layout_below="@id/textView_SaleEload"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:id="@+id/textView_SaleGlobe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Globe"
+            android:gravity="center_vertical"
+            android:textSize="10dp"
+            android:layout_below="@id/textView_SaleSmart"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:id="@+id/textView_SaleSun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sun"
+            android:gravity="center_vertical"
+            android:textSize="10dp"
+            android:layout_below="@id/textView_SaleGlobe"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:id="@+id/textView_SaleComputedEload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Computed Eload"
+            android:gravity="center_vertical"
+            android:textSize="10dp"
+            android:layout_below="@id/textView_SaleSun"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
