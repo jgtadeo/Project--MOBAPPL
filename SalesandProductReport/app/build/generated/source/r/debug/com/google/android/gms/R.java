@@ -92,16 +92,16 @@ public final class R {
 		public static final int button = 0x7f0d004a;
 		public static final int center = 0x7f0d0025;
 		public static final int dark = 0x7f0d0042;
-		public static final int email = 0x7f0d00da;
+		public static final int email = 0x7f0d00df;
 		public static final int icon_only = 0x7f0d003f;
 		public static final int light = 0x7f0d0043;
 		public static final int none = 0x7f0d0012;
 		public static final int normal = 0x7f0d000e;
-		public static final int progressBar = 0x7f0d008f;
+		public static final int progressBar = 0x7f0d008e;
 		public static final int radio = 0x7f0d006b;
 		public static final int standard = 0x7f0d0040;
-		public static final int text = 0x7f0d00ff;
-		public static final int text2 = 0x7f0d00fd;
+		public static final int text = 0x7f0d0103;
+		public static final int text2 = 0x7f0d0101;
 		public static final int wide = 0x7f0d0041;
 		public static final int wrap_content = 0x7f0d0022;
 	}

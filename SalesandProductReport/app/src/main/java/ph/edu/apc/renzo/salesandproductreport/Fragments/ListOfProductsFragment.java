@@ -1,14 +1,17 @@
 package ph.edu.apc.renzo.salesandproductreport.Fragments;
 
+import android.content.DialogInterface;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
@@ -72,7 +75,7 @@ public class ListOfProductsFragment extends Fragment {
                 ProductsViewHolder.class,
                 database) {
             @Override
-            protected void populateViewHolder(ProductsViewHolder viewHolder, Products model, int position) {
+            protected void populateViewHolder(ProductsViewHolder viewHolder, Products model, final int position) {
                 viewHolder.setExpiration_date(model.getExpiration_date());
                 viewHolder.setProduct_name(model.getProduct_name());
                 viewHolder.setCategory(model.getCategory());
@@ -80,6 +83,31 @@ public class ListOfProductsFragment extends Fragment {
                 viewHolder.setPrice(model.getPrice());
                 viewHolder.setQuantity(model.getQuantity());
                 viewHolder.setWeight(model.getWeight());
+
+                viewHolder.mView.setOnLongClickListener(new View.OnLongClickListener() {
+                    @Override
+                    public boolean onLongClick(View view) {
+                        AlertDialog.Builder build = new AlertDialog.Builder(getActivity());
+                        build.setTitle("Delete data");
+                        build.setMessage("Do you want to delete the data?");
+                        build.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                firebaseRecyclerAdapter.getRef(position).removeValue();
+                                dialogInterface.dismiss();
+                                Toast.makeText(getActivity(), "Successfully deleted data", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                        build.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                dialogInterface.cancel();
+                            }
+                        });
+                        build.show();
+                        return true;
+                    }
+                });
             }
         };
 

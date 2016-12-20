@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="3dp"
+    android:layout_margin="5dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorTab" >
+
+        <TextView
+            android:id="@+id/textView_ExpenseDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textSize="14dp"
+            android:background="@color/colorLine"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/textView_ExpenseName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Expense Name"
+            android:gravity="center_vertical"
+            android:textSize="10dp"
+            android:layout_below="@id/textView_ExpenseDate"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/textView_ExpenseCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cost"
+            android:gravity="center_vertical"
+            android:textSize="10dp"
+            android:layout_below="@id/textView_ExpenseName"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -61,15 +61,15 @@
                     android:layout_weight=".8"
                     android:layout_marginTop="40dp"
                     android:layout_marginLeft="10dp"
-                    android:textSize="20sp"
+                    android:textSize="15sp"
                     android:maxLines="1"
                     android:hint="Date" />
                 <Button
                     android:id="@+id/button_SalesAddDate"
-                    android:layout_width="110dp"
+                    android:layout_width="70dp"
                     android:layout_height="35dp"
                     android:layout_marginTop="35dp"
-                    android:layout_marginRight="55dp"
+                    android:layout_marginRight="50dp"
                     android:layout_weight=".2"
                     android:text="Add date"
                     android:textAllCaps="false"
@@ -110,7 +110,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="100dp"
                 android:orientation="horizontal"
-                android:weightSum="1">
+                android:weightSum="1"
+                android:id="@+id/linearLayout2">
                 <ImageView
                     android:layout_width="35dp"
                     android:layout_height="35dp"
@@ -177,7 +178,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="200dp"
                 android:orientation="horizontal"
-                android:weightSum="1">
+                android:weightSum="1"
+                android:id="@+id/linearLayout3">
                 <ImageView
                     android:layout_width="35dp"
                     android:layout_height="35dp"
@@ -226,20 +228,17 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="330dp"
-                android:layout_marginLeft="235dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginTop="54dp"
+                android:layout_below="@+id/linearLayout3"
+                android:layout_centerHorizontal="true">
                 <Button
                     android:id="@+id/button_SalesCompute"
-                    android:layout_width="140dp"
+                    android:layout_width="100dp"
                     android:layout_height="40dp"
                     android:layout_marginBottom="135dp"
-                    android:paddingRight="15dp"
-                    android:paddingLeft="15dp"
                     android:text="Compute"
                     android:textSize="16sp"
                     android:textColor="#0B4555"

@@ -36,10 +36,6 @@
         "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\src\\main\\res\\layout\\activity_sales.xml"
     },
     {
-        "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_expenses.xml",
-        "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\src\\main\\res\\layout\\fragment_expenses.xml"
-    },
-    {
         "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
         "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\layout\\notification_action.xml"
     },
@@ -174,6 +170,10 @@
     {
         "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
         "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\layout\\expense_row_layout.xml",
+        "source": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\src\\main\\res\\layout\\expense_row_layout.xml"
     },
     {
         "merged": "C:\\Users\\Renzo\\Desktop\\Subjects\\Mobappl\\ProjectMobileApp\\SalesandProductReport\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_records.xml",

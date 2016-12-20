@@ -1,22 +1,23 @@
 package ph.edu.apc.renzo.salesandproductreport.Fragments;
 
+import android.content.DialogInterface;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-
-import org.w3c.dom.Text;
 
 import ph.edu.apc.renzo.salesandproductreport.Model.Sales;
 import ph.edu.apc.renzo.salesandproductreport.R;
@@ -73,7 +74,7 @@ public class ListOfSalesFragment extends Fragment {
                 SalesViewHolder.class,
                 database) {
             @Override
-            protected void populateViewHolder(SalesViewHolder viewHolder, Sales model, int position) {
+            protected void populateViewHolder(SalesViewHolder viewHolder, Sales model, final int position) {
                 viewHolder.setDate(model.getDate());
                 viewHolder.setGross(model.getGross());
                 viewHolder.setBread(model.getBread());
@@ -84,6 +85,31 @@ public class ListOfSalesFragment extends Fragment {
                 viewHolder.setGlobe(model.getGlobe());
                 viewHolder.setSun(model.getSun());
                 viewHolder.setComputed_eload(model.getComputed_eload());
+
+                viewHolder.mView.setOnLongClickListener(new View.OnLongClickListener() {
+                    @Override
+                    public boolean onLongClick(View view) {
+                        AlertDialog.Builder build = new AlertDialog.Builder(getActivity());
+                        build.setTitle("Delete data");
+                        build.setMessage("Do you want to delete the data?");
+                        build.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                firebaseRecyclerAdapter.getRef(position).removeValue();
+                                dialogInterface.dismiss();
+                                Toast.makeText(getActivity(), "Successfully deleted data", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                        build.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                dialogInterface.cancel();
+                            }
+                        });
+                        build.show();
+                        return true;
+                    }
+                });
             }
         };
 

@@ -37,7 +37,7 @@
         android:background="@color/colorLine"
         android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="90dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:id="@+id/view2"/>
@@ -62,7 +62,7 @@
         android:layout_width="fill_parent"
         android:layout_height="1dp"
         android:background="@color/colorLine"
-        android:layout_marginTop="170dp"
+        android:layout_marginTop="140dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_centerHorizontal="true"
@@ -71,11 +71,11 @@
 
     <Button
         android:id="@+id/button_MainSales"
-        android:layout_width="180dp"
-        android:layout_height="44dp"
+        android:layout_width="150dp"
+        android:layout_height="38dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="309dp"
+        android:layout_marginBottom="270dp"
         android:text="Sales"
         android:paddingRight="15dp"
         android:paddingLeft="15dp"
@@ -86,11 +86,11 @@
 
     <Button
         android:id="@+id/button_MainProducts"
-        android:layout_width="180dp"
-        android:layout_height="44dp"
+        android:layout_width="150dp"
+        android:layout_height="38dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="250dp"
+        android:layout_marginBottom="220dp"
         android:text="Products"
         android:paddingRight="15dp"
         android:paddingLeft="15dp"
@@ -101,11 +101,11 @@
 
     <Button
         android:id="@+id/button_MainGraph"
-        android:layout_width="180dp"
-        android:layout_height="44dp"
+        android:layout_width="150dp"
+        android:layout_height="38dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="190dp"
+        android:layout_marginBottom="170dp"
         android:paddingRight="15dp"
         android:paddingLeft="15dp"
         android:text="Graph"
@@ -116,11 +116,11 @@
 
     <Button
         android:id="@+id/button_MainExpenses"
-        android:layout_width="180dp"
-        android:layout_height="44dp"
+        android:layout_width="150dp"
+        android:layout_height="38dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="130dp"
+        android:layout_marginBottom="120dp"
         android:paddingRight="15dp"
         android:paddingLeft="15dp"
         android:text="Expenses"
@@ -131,8 +131,8 @@
 
     <Button
         android:id="@+id/button_MainRecords"
-        android:layout_width="180dp"
-        android:layout_height="44dp"
+        android:layout_width="150dp"
+        android:layout_height="38dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="70dp"

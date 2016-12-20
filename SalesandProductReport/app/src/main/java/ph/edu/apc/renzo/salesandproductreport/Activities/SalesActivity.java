@@ -105,7 +105,7 @@ public class SalesActivity extends AppCompatActivity implements View.OnClickList
                     dialog.show();
                     return;
                 } else if (editGross.getText().toString().isEmpty()) {
-                    //editGross.setError("Input gross");
+                    editGross.setError("Input gross");
                     return;
                 } else if (editBread.getText().toString().isEmpty()) {
                     editBread.setError("Input bread");
